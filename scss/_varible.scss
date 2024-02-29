@@ -1,0 +1,130 @@
+// colors-style
+$brown-900: #492700;
+$brown-800: #553504;
+$brown-700: #63410d;
+$brown-500: #b07c5d;
+
+$white: #fff;
+$dark: #333;
+
+$dark-blue: #163e79;
+$light-blue: #e5e9f0;
+$sky-blue: #86bef1;
+$yellow: #fac90f;
+$yellow-700:#f9d349;
+$dark-yellow: #f3c105; 
+$yellow-200: #fde6ac;
+$yellow-100: #ffecb8;
+$yellow-50: #fdf6e0;
+$orange-900: #e04507;
+$orange-700: #ea6006;
+$orange-500: #fb8d01;
+$green-lake-700: #5e947a;
+$green-lake-300: #42c6ae;
+$green-lake-100: #e0f3ed;
+
+$red-700: #c63400;
+
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+// Breakpoint
+$pcrwd-breakpoint: 1080;
+$mbrwd-breakpoint: 768;
+
+$grid-breakpoints: (
+  xs:0,
+  sm: 576px,
+  md: $mbrwd-breakpoint * 1px,
+  lg: 1080px,
+  xl: $pcrwd-breakpoint * 1px,
+  xxl: 1400px) !default;
+
+
+@function vw($target) {
+  $vw-context: (
+    $pcrwd-breakpoint * .01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+@function vwm($target) {
+  $vw-context: (
+    $mbrwd-breakpoint * .01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+@function xy($xy, $ttlw) {
+  @return ($xy / $ttlw * 100%
+);
+}
+
+@function px-em($px, $base: 16) {
+  @return ($px / $base * 1em);
+}
+
+@mixin posXY($x: 0, $y: 0) {
+  left: calc(50% + #{$x}px);
+  top: xy($y, $h);
+}
+
+@mixin size($w: null, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
+@mixin d-flex {
+  display: flex;
+}
+
+@mixin flex-wrap {
+  flex-wrap: wrap;
+}
+
+@mixin flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+@mixin flex-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin breakpoint($breakpoints) {
+  @if type_of($breakpoints)==number {
+    @media (max-width:(breakpoint + px)) {
+      @content;
+    }
+  }
+
+  @else {
+    $breakpoints: map-get($grid-breakpoints , $breakpoints);
+
+    @if($breakpoints>1) {
+      @media (max-width: ($breakpoints - 1px)) {
+        @content;
+      }
+    }
+  }
+}

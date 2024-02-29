@@ -1,0 +1,150 @@
+.gap {
+  margin-top: px-em(222);
+}
+
+.header {
+  position: fixed;
+  z-index: 998;
+  width: 100%;
+  background: $brown-500;
+  box-shadow: 0 5px 0 hsla(0, 0%, 16%, 0.4);
+
+  &-sec {
+    padding: 16px 0;
+
+    .menu {
+      justify-content: flex-start;
+    }
+  }
+
+  .logo {
+    width: 202px;
+    height: 34px;
+  }
+
+  .menu{
+    @include d-flex;
+    align-items: center;
+    
+    .active{
+      background: $brown-800;
+      font-weight: $bold;
+
+      &::after {
+        @extend %menu-border;
+        right: -4px;
+      }
+
+      &::before {
+        @extend %menu-border;
+        left: -4px;
+      }
+    }
+    &-area{
+      width: 100%;
+      @include d-flex;
+      justify-content: space-between;
+
+    }
+
+    &-box{
+      @include flex-center;
+      margin-left: 16px;
+      color: $yellow-50;
+
+      &_link {
+        position: relative;
+        display: inline-block;
+        margin-right: 4px;
+        padding: 20px 16px;
+        color: $yellow-50;
+
+        &:hover{
+          color: $yellow-50;
+          background: $brown-800;
+          font-weight: $bold;
+
+          &::after {
+            @extend %menu-border;
+            right: -4px;
+          }
+
+          &::before {
+            @extend %menu-border;
+            left: -4px;
+          }
+        }
+      }
+
+    }
+  }
+
+  .media{
+    @include flex-center;
+
+    .link{
+      @include size(33px);
+
+      &-fb{
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.footer {
+  background: $brown-900;
+  padding: 24px 0;
+
+  &-logo {
+    width: 202px;
+    height: 34px;
+  }
+
+  .copy-right {
+    @include flex-column;
+    color: $yellow-50;
+    text-align: center;
+
+    &_company {
+      padding-top:12px;
+    }
+  }
+}
+
+.gotop {
+  position: fixed;
+  right: 24px;
+  bottom: 130px;
+  z-index: 998;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: $brown-800;
+  opacity: .76;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgb(59, 29, 1, .5);
+  cursor: pointer;
+
+  &:after {
+    @include center;
+    content: "";
+    background: url(../images/icon-arrow_top.png)no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 30px;
+    height: 17px;
+  }
+
+}
+
+.black-overlay {
+  position: fixed;
+  z-index: 999;
+  display: none;
+  background: rgb(0, 0, 0, .5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

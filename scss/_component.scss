@@ -1,0 +1,256 @@
+.btn {
+  position: relative;
+  z-index: 10;
+  @include flex-center;
+  width: 229px;
+  height: 64px;
+  border-top: 8px solid $brown-700;
+  border-bottom: 8px solid $brown-700;
+  font-size: 28px;
+  font-weight: $bold;
+  color: $white;
+  box-shadow: 0 8px 0 $brown-900;
+  cursor: pointer;
+
+  &-start {
+    background: $brown-500;
+    color: $white;
+
+    &:hover {
+      background: $brown-700;
+    }
+  }
+
+
+  &-ready {
+    position: absolute;
+    bottom: 130px;
+    background: $brown-700;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+      bottom: 122px;
+      box-shadow: none;
+
+      &::before,
+      &::after {
+        box-shadow: none;
+      }
+    }
+
+  }
+
+  &-tips {
+    background: $brown-700;
+    cursor: initial;
+
+    &.msg {
+      width: 657px;
+      height: 60px;
+      margin-top: 32px;
+      font-weight: initial;
+      font-size: 24px;
+      color: $yellow;
+      border-top: 8px solid $brown-500;
+      border-bottom: 8px solid $brown-500;
+      box-shadow: none;
+
+      &::before,
+      &::after {
+        background: $brown-500;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &-link {
+    .link {
+      width: 400px;
+      margin: px-em(16) auto;
+      border-top: 8px solid $orange-500;
+      border-bottom: 8px solid $orange-500;
+      background: $orange-700;
+      box-shadow: 0 8px 0 $orange-900;
+      font-size: 24px;
+
+      &::before,
+      &::after {
+        background: $orange-500;
+        box-shadow: 0 8px 0 $orange-900;
+      }
+
+      &:hover {
+        top: 8px;
+        background: $orange-500;
+        box-shadow: none;
+
+        &::before,
+        &::after {
+          box-shadow: none;
+        }
+      }
+    }
+
+  }
+
+  &-border {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: $brown-700;
+      box-shadow: 0 8px 0 $brown-900;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -7px;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      background: $brown-700;
+      box-shadow: 0 8px 0 $brown-900;
+    }
+  }
+}
+
+@media screen and (max-width:($pcrwd-breakpoint * 1px)) {
+  .btn {
+    border-top: vw(8px) solid $brown-700;
+    border-bottom: vw(8px) solid $brown-700;
+    padding: vw(16px);
+    font-size: vw(28px);
+    @include size(vw(229px), vw(60px));
+    box-shadow: 0 vw(8px) 0 $brown-900;
+
+    &-start {
+      margin-top: vw(60px);
+    }
+
+    &-ready {
+      bottom: vw(130px);
+
+      &:hover {
+        bottom: vw(122px);
+      }
+    }
+
+    &-tips {
+
+      &.msg {
+        width: vw(657px);
+        height: vw(60px);
+        margin-top: vw(32px);
+        font-size: vw(24px);
+        border-top: vw(8px) solid $brown-500;
+        border-bottom: vw(8px) solid $brown-500;
+
+      }
+    }
+
+    &-link {
+
+      .link {
+        width: vw(400px);
+        margin: vw(24px) auto;
+        border-top: vw(8px) solid $orange-500;
+        border-bottom: vw(8px) solid $orange-500;
+        box-shadow: 0 vw(8px) 0 $orange-900;
+        font-size: vw(24px);
+
+        &::before,
+        &::after {
+          box-shadow: 0 vw(8px) 0 $orange-900;
+        }
+      }
+    }
+
+    &-border {
+      &::before {
+        left: vw(-7px);
+        width: vw(8px);
+        box-shadow: 0 vw(8px) 0 $brown-900;
+      }
+
+      &::after {
+        right: vw(-7px);
+        width: vw(8px);
+        box-shadow: 0 vw(8px) 0 $brown-900;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:($mbrwd-breakpoint * 1px)) {
+  .btn {
+    border-top: vwm(12px) solid $brown-700;
+    border-bottom: vwm(12px) solid $brown-700;
+    font-size: vwm(40px);
+    @include size(vwm(360px), vwm(60px));
+    box-shadow: 0 vwm(12px) 0 $brown-900;
+
+
+    &-ready {
+      bottom: vwm(130px);
+      font-size: vwm(36px);
+      @include size(vwm(240px), vwm(80px));
+
+      &:hover {
+        bottom: vwm(122px);
+      }
+    }
+
+    &-tips {
+
+      &.msg {
+        width: vwm(657px);
+        height: vwm(125px);
+        margin: vwm(32px) auto;
+        font-size: vwm(36px);
+        border-top: vwm(12px) solid $brown-500;
+        border-bottom: vwm(12px) solid $brown-500;
+
+      }
+    }
+
+    &-link {
+      margin-top: vwm(50px);
+
+      .link {
+        width: vwm(400px);
+        height: vwm(100px);
+        margin: vwm(32px) auto;
+        border-top: vwm(12px) solid $orange-500;
+        border-bottom: vwm(12px) solid $orange-500;
+        box-shadow: 0 vwm(12px) 0 $orange-900;
+        font-size: vwm(36px);
+
+        &::before,
+        &::after {
+          box-shadow: 0 vwm(12px) 0 $orange-900;
+        }
+      }
+    }
+
+    &-border {
+      &::before {
+        left: vwm(-10px);
+        width: vwm(12px);
+        box-shadow: 0 vwm(12px) 0 $brown-900;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: vwm(-10px);
+        width: vwm(12px);
+        box-shadow: 0 vwm(12px) 0 $brown-900;
+      }
+    }
+  }
+}

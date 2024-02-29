@@ -1,0 +1,10 @@
+.container {
+  max-width: $pcrwd-breakpoint + px;
+  padding: 0 16px;
+  margin: auto;
+  .row {
+    position: relative;
+    z-index: 20;
+  }
+}
+
