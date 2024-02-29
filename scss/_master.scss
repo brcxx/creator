@@ -1,0 +1,49 @@
+.section {
+  padding-top: 70px;
+
+  &-heading {
+    margin: 0 auto;
+    &__about {
+      @include size (330px, 40px);
+    }
+    &__intro {
+      @include size (491px, 40px);
+    }
+    &__free {
+      @include size (445px, 50px);
+    }
+
+    &__text {
+      padding: 30px 0;
+      font-size: 20px;
+    }
+  }
+
+  &-intro {
+    background: #dafffa;
+    padding: 115px 0;
+
+    &__inner {
+      padding-bottom: 50px;
+    }
+  }
+
+  &-chapter {
+    position: relative;
+    width: 100%;
+    padding: 115px 0;
+    background: $secondary-100;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width:100%;
+      background: url(../images/bg-gray--wave.svg) no-repeat;
+      background-size: auto 100%;
+      background-position: center top;
+      background-repeat: no-repeat;
+      padding-bottom: 115px;
+    }
+  }
+}
