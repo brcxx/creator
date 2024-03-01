@@ -3,3 +3,33 @@
   padding: 0 16px;
   margin: 0 auto;
 }
+
+
+.logo {
+  @include size (198px, 33px);
+}
+
+.header {
+  background: $complementary;
+  padding: 16px 0;
+}
+
+.footer {
+  background: $analogous;
+  color: $white;
+  position: relative;
+
+
+  &-info {
+    padding: 16px 0 24px;
+    text-align: center;
+
+    .logo {
+      margin: auto;
+    }
+  }
+
+  .copy-right {
+    padding-top: 16px;
+  }
+}

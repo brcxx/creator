@@ -1,5 +1,99 @@
+.wrapper {
+  overflow: hidden;
+}
+
 .section {
   padding-top: 70px;
+
+  &::before,&::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 100%;
+    padding-bottom: 150px;
+    transform: translate(-50%);
+  }
+
+  &:nth-child(2) {
+    &::before {
+      top: 0;
+      background: url(../images/bg-gray--wave.svg);
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat-x;
+    }
+
+    &::after {
+      bottom: -150px;
+      background: url(../images/bg-yellow--wave.svg);
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: repeat-x;
+      z-index: -1;
+    }
+  }
+
+  &:nth-child(3) {
+    &::after {
+      bottom: 0;
+      background: url(../images/bg-green--wave.svg) no-repeat;
+      background-size: cover;
+      background-position: center top;
+      background-repeat: repeat-x;
+    }
+  }
+
+  .row {
+    @include flex-column;
+  }
+
+  .decobox {
+    * {
+      position: absolute;
+    }
+
+    &__circle {
+
+      &-blue01 {
+        @include size(345px);
+        left: calc(50% + px-em(560));
+      }
+
+      &-blue02 {
+        @include size(140px);
+        top: px-em(45);
+        left: calc(50% + px-em(-689));
+      }
+
+      &-pink {
+        @include size(70px);
+        top: px-em(55);
+        left: calc(50% + px-em(519));
+      }
+      
+    }
+
+    &__vector01 {
+      @include size(366px);
+      left: calc(50% + px-em(-910));
+    }
+
+    &__vector02 {
+      @include size(71px, 176px );
+      top: px-em(340);
+      left: calc(50% + px-em(788));
+    }
+
+    &__line {
+      &-yellow {
+        @include size(717px);
+        top: px-em(-14);
+        left: calc(50% + px-em(-1280));
+      }
+    }
+  }
+
 
   &-heading {
     margin: 0 auto;
@@ -12,6 +106,15 @@
     &__free {
       @include size (445px, 50px);
     }
+    &__pro {
+      @include size (347px, 46px);
+    }
+    &__more {
+      @include size (317px, 48px);
+    }
+    &__apply {
+      @include size (246px, 40px);
+    }
 
     &__text {
       padding: 30px 0;
@@ -19,9 +122,17 @@
     }
   }
 
+  &-wrapper {
+    padding-top: 70px;
+  }
+
+  &-btnbox {
+    @include flex-center;
+  }
+
   &-intro {
     background: #dafffa;
-    padding: 115px 0;
+    position: relative;
 
     &__inner {
       padding-bottom: 50px;
@@ -31,19 +142,129 @@
   &-chapter {
     position: relative;
     width: 100%;
-    padding: 115px 0;
     background: $secondary-100;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width:100%;
-      background: url(../images/bg-gray--wave.svg) no-repeat;
-      background-size: auto 100%;
-      background-position: center top;
-      background-repeat: no-repeat;
-      padding-bottom: 115px;
+
+
+    &__content {
+      @include flex-center;
+      padding-bottom: 70px;
+
+      &:nth-last-child(1) {
+        padding-bottom: 0;
+      }
+
+      &.reverse {
+        flex-direction: row-reverse;
+      }
     }
+
+    &__textbox {
+      margin:0 32px;
+    }
+
+    &__imgbox {
+      .inner {
+        @include flex-center;
+
+        &__item {
+          @include flex-column;
+          margin: 0 24px;
+          &-img {
+            @include size ( 103px, 103px)
+          }
+          &-name {
+            font-size: 20px;
+            font-weight: $medium;
+
+            &.level-1 {
+              color: $primary-900;
+            }
+            
+            &.level-2 {
+              color: #3099f0;
+            }
+
+            &.level-3 {
+              color: $complementary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-step {
+    position: relative;
+    padding-bottom: 115px;
+    &__rule {
+      padding: 24px 0;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    &--link {
+      color: $analogous;
+      font-weight: $bold;
+      text-decoration: underline;
+      &:hover {
+        color: $analogous-200;
+      }
+    }
+
+    &__content {
+      @include flex-center;
+      align-items: flex-start;
+      margin: 65px 0 115px;
+    }
+
+    &__item {
+      @include flex-column;
+      position: relative;
+      max-width: 270px;
+      
+
+      &-img {
+        @include size (222px, 200px)
+      }
+
+      &-text {
+        padding: 8px 0 24px;
+        font-size: 18px;
+        .title {
+          color: $analogous;
+          font-size: 24px;
+          font-weight: $bold;
+          text-align: center;
+          white-space: nowrap;
+        }
+        .num {
+          font-size: 72px;
+          margin-right: -8px;
+          color: $analogous;
+          opacity: .2;
+          font-weight: $black;
+        }
+        .step {
+          font-size: 24px;
+          
+        }
+      }
+
+      .arrow {
+        @include size (25px, 210px);
+        margin:0 48px;
+      }
+    }
+  }
+
+  &-apply {
+    width: 100%;
+    padding: 20px 0;
+    background: #015a48;
+    text-align: center;
+    box-shadow: (0 -5px 20px) rgba(0, 0, 0, .3);
+    position: relative;
+    z-index: 1;
   }
 }

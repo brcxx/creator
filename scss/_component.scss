@@ -1,0 +1,54 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 0 px-em(8);
+  padding: px-em(8) px-em(24);
+  border-radius: 3rem;
+  font-size: 20px;
+  font-weight: $medium;
+  color: $white;
+  background: $complementary;
+  text-align: center;
+  
+  &:hover {
+    background: $complementary-700;
+  }
+
+  &--md {
+    min-width: 187px;
+
+    &::after {
+      content: "";
+      background: url(../images/icon-arrow--white.svg);
+      @include size(15px, 12px);
+      position: absolute;
+      top: 19px;
+      right: px-em(16);
+      display: block;
+    }
+  }
+
+  &--l {
+    min-width: 200px;
+    &::after {
+      content: "";
+      background: url(../images/icon-arrow--white.svg);
+      @include size(15px, 12px);
+      position: absolute;
+      top: 19px;
+      right: px-em(16);
+      display: block;
+    }
+  }
+
+  &--xl {
+    min-width: 280px;
+  }
+
+
+  &-apply {
+    font-size: 28px;
+    font-weight: $bold;
+  }
+  
+}

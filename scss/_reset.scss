@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   font: inherit;
-  font-family: Arial, 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif,Arial;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -51,6 +51,7 @@ body {
   line-height: 1.5;
   letter-spacing: .1em;
   background: #fbfbfb;
+  color: #282828;
 
 }
 
