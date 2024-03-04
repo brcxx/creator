@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920.9121 991.0673">
+  <defs>
+    <clipPath id="clippath">
+      <rect width="1920.9121" height="991.0673" style="fill: none; stroke-width: 0px;"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect x="1403.7544" y="475.1088" width="517.1577" height="513.0727" style="fill: none; stroke-width: 0px;"/>
+    </clipPath>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <g style="clip-path: url(#clippath);">
+      <g>
+        <polygon points="-88.1636 754.3207 -235.6525 602.2019 704.5802 -341.4498 852.069 -189.331 -88.1636 754.3207" style="fill: #11d0b4; stroke-width: 0px;"/>
+        <polygon points="-186.9261 905.0204 -231.7144 854.6452 1014.0877 -395.6874 1058.8759 -345.3122 -186.9261 905.0204" style="fill: #8dfff6; stroke-width: 0px;"/>
+        <g>
+          <path d="M12.1633,521.7035l-38.776-38.917,27.6986-27.7991,5.5349,5.555-16.6207,16.681,11.0858,11.1261,16.6207-16.681,5.5349,5.555-16.6207,16.681,11.0858,11.1261,16.6207-16.6812,5.5341,5.555-27.6982,27.7989ZM17.7066,471.6685l-11.0858-11.1261,5.5425-5.5629,11.0858,11.1261-5.5425,5.5629ZM34.3274,488.3495l-11.0858-11.1259,5.5425-5.5629,11.0858,11.1261-5.5425,5.5627Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+          <path d="M50.9393,482.7864l-33.2411-33.362,5.5349-5.555-5.5349-5.555,22.1633-22.2441,5.5349,5.555-16.6203,16.681,11.0858,11.1261,16.6203-16.681-11.0858-11.1261,5.5429-5.5631,33.2415,33.362-5.5429,5.5631-16.6207-16.6808-16.6203,16.681,16.6203,16.6808-11.0778,11.1181Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+          <path d="M89.7153,443.8694l-38.776-38.917,11.0778-11.1181,16.6207,16.6812,16.6207-16.6812-16.6207-16.6812,5.5429-5.5629,38.7756,38.917-5.5425,5.5629-16.6203-16.6808-16.6207,16.6812,16.6203,16.6808-11.0778,11.1181Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+          <path d="M128.4913,404.9522l-33.2407-33.362,5.5345-5.5548-5.5349-5.555,22.1637-22.2443,5.5349,5.555-16.6207,16.6812,11.0858,11.1261,16.6207-16.6812-11.0858-11.1261,5.5429-5.5631,33.2411,33.362-5.5429,5.5631-16.6203-16.6808-16.6207,16.6812,16.6203,16.6808-11.0778,11.1179Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+          <path d="M167.2677,366.0352l-38.7764-38.917,11.0778-11.1181,5.5349,5.555,5.5429-5.5629,5.5429,5.5631-5.5429,5.5629,27.6986,27.7989-11.0778,11.1181ZM194.9659,338.2361l-27.6982-27.7989-5.5429,5.5631-5.5429-5.5631,5.5429-5.5631-5.5349-5.555,5.5429-5.5631,38.776,38.917-5.5429,5.5631ZM161.7328,327.1184l-5.5429-5.5631,5.5349-5.555,5.5429,5.5631-5.5349,5.555Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+          <path d="M211.5782,321.5632l-5.5341-5.5546-5.5349,5.5548-33.2415-33.3624,11.0778-11.1179,33.2415,33.3624,16.6203-16.681,5.5345,5.5546-22.1637,22.2441ZM228.2074,293.7645l-33.2415-33.3624,5.5429-5.5631,33.2415,33.3624-5.5429,5.5631Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+          <path d="M255.8976,277.0829l-33.2411-33.362-11.0778,11.1181-5.5349-5.555,33.2411-33.3622,5.5349,5.555-11.0858,11.1261,33.2415,33.362-11.0778,11.1179Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+        </g>
+        <g>
+          <path d="M295.6379,237.198l-38.776-38.917,27.6986-27.7993,5.5349,5.555-16.6207,16.6812,11.0858,11.1261,16.6207-16.6812,5.5349,5.555-16.6207,16.6812,11.0858,11.1261,16.6207-16.6812,5.5345,5.5546-27.6986,27.7993ZM301.1812,187.1629l-11.0858-11.1261,5.5429-5.5631,11.0858,11.1261-5.5429,5.5631ZM317.8019,203.8441l-11.0858-11.1261,5.5429-5.5631,11.0858,11.1261-5.5429,5.5631Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+          <path d="M334.4139,198.2808l-33.2407-33.362,5.5345-5.5548-5.5349-5.555,22.1637-22.2443,5.5349,5.555-16.6207,16.6812,11.0858,11.1261,16.6207-16.6812-11.0858-11.1261,5.5429-5.5631,33.2411,33.362-5.5429,5.5631-16.6203-16.6808-16.6207,16.6812,16.6203,16.6808-11.0778,11.1179Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+          <path d="M373.1903,159.3636l-38.776-38.917,11.0774-11.1179,16.6207,16.6812,16.6207-16.681-16.6207-16.6812,5.5429-5.5631,38.776,38.917-5.5429,5.5631-16.6203-16.6808-16.6207,16.681,16.6207,16.6808-11.0778,11.1179Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+          <path d="M411.9663,120.4466l-33.2411-33.362,5.5349-5.555-5.5349-5.555,22.1637-22.2441,5.5349,5.555-16.6207,16.681,11.0858,11.1261,16.6207-16.681-11.0858-11.1261,5.5429-5.5631,33.2407,33.362-5.5429,5.5631-16.6199-16.6808-16.6207,16.681,16.6203,16.6808-11.0778,11.1181Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+          <path d="M450.7423,81.5296l-38.776-38.917,11.0778-11.1181,5.5349,5.555,5.5429-5.5631,5.5429,5.5631-5.5429,5.5631,27.6982,27.7989-11.0778,11.1181ZM478.4409,53.7303l-27.6982-27.7989-5.5429,5.5631-5.5429-5.5631,5.5429-5.5631-5.5349-5.555,5.5425-5.5629,38.7764,38.917-5.5429,5.5629ZM445.2078,42.6126l-5.5429-5.5631,5.5349-5.555,5.5429,5.5631-5.5349,5.555Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+          <path d="M495.0532,37.0576l-5.5345-5.5546-5.5349,5.555L450.7423,3.6956l11.0778-11.1181,33.2415,33.3624,16.6207-16.681,5.5341,5.5546-22.1633,22.2441ZM511.6824,9.2589l-33.2415-33.3624,5.5429-5.5631,33.2415,33.3624-5.5429,5.5631Z" style="fill: #8dfff6; stroke-width: 0px;"/>
+        </g>
+      </g>
+    </g>
+    <g style="clip-path: url(#clippath-1);">
+      <rect x="1485.454" y="376.2524" width="632.3539" height="1331.7014" transform="translate(1264.5637 -968.7205) rotate(45)" style="fill: #11d0b4; stroke-width: 0px;"/>
+      <polygon points="1574.6763 1600.7576 1365.7781 1387.8409 2292.1135 461.5056 2501.0116 674.4222 1574.6763 1600.7576" style="fill: #8cfff6; stroke-width: 0px;"/>
+      <g>
+        <g>
+          <g>
+            <circle cx="1914.3856" cy="640.6064" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            <circle cx="1908.1151" cy="668.6728" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            <circle cx="1882.5455" cy="672.4466" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            <circle cx="1904.3414" cy="694.2424" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            <circle cx="1926.1372" cy="716.0383" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            <circle cx="1876.275" cy="700.5129" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            <circle cx="1898.0709" cy="722.3088" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            <circle cx="1919.8667" cy="744.1046" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            <circle cx="1850.7054" cy="704.2867" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            <circle cx="1872.5013" cy="726.0825" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            <circle cx="1894.2971" cy="747.8784" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            <circle cx="1916.093" cy="769.6742" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          </g>
+          <g>
+            <g>
+              <circle cx="1846.2454" cy="730.5426" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1868.0412" cy="752.3384" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1889.8371" cy="774.1343" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1911.6329" cy="795.9302" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1820.6758" cy="734.3163" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1842.4716" cy="756.1122" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1864.2675" cy="777.908" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1886.0633" cy="799.7039" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1907.8592" cy="821.4998" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1814.4052" cy="762.3827" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1836.2011" cy="784.1786" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1857.997" cy="805.9744" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1879.7928" cy="827.7703" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1901.5887" cy="849.5661" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1923.3845" cy="871.362" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1788.8356" cy="766.1564" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1810.6315" cy="787.9523" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1832.4274" cy="809.7482" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1854.2232" cy="831.544" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1876.0191" cy="853.3399" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1897.8149" cy="875.1357" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1782.5651" cy="794.2228" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1804.361" cy="816.0187" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1826.1568" cy="837.8145" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1847.9527" cy="859.6104" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1869.7486" cy="881.4062" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1891.5444" cy="903.2021" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1756.9955" cy="797.9966" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1778.7914" cy="819.7924" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1800.5872" cy="841.5883" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1822.3831" cy="863.3841" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1844.179" cy="885.18" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1865.9748" cy="906.9758" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1750.725" cy="826.0629" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1772.5209" cy="847.8588" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1794.3167" cy="869.6546" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1816.1126" cy="891.4505" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1837.9084" cy="913.2463" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1859.7043" cy="935.0422" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1725.1554" cy="829.8367" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1746.9513" cy="851.6325" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1768.7471" cy="873.4284" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1790.543" cy="895.2242" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1812.3388" cy="917.0201" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1834.1347" cy="938.8159" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1718.8849" cy="857.903" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1740.6808" cy="879.6989" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1762.4766" cy="901.4947" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1784.2725" cy="923.2906" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1806.0683" cy="945.0865" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1827.8642" cy="966.8823" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1693.3153" cy="861.6768" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1715.1112" cy="883.4726" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1736.907" cy="905.2685" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1758.7029" cy="927.0643" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1780.4987" cy="948.8602" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1802.2946" cy="970.6561" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            </g>
+            <g>
+              <circle cx="1920.2849" cy="897.6057" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1914.0144" cy="925.6721" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1888.4448" cy="929.4459" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1910.2407" cy="951.2417" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1882.1743" cy="957.5122" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1903.9702" cy="979.3081" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1856.6047" cy="961.286" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1878.4006" cy="983.0818" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1850.3342" cy="989.3523" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+              <circle cx="1824.7646" cy="993.1261" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <circle cx="1688.5321" cy="888.2558" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1710.328" cy="910.0517" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1732.1238" cy="931.8475" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1753.9197" cy="953.6434" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1775.7155" cy="975.4393" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1797.5114" cy="997.2351" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1662.9625" cy="892.0296" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1684.7584" cy="913.8254" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1706.5542" cy="935.6213" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1728.3501" cy="957.4172" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1750.1459" cy="979.213" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1656.692" cy="920.0959" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1678.4879" cy="941.8918" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1700.2837" cy="963.6877" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1722.0796" cy="985.4835" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1631.1224" cy="923.8697" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1652.9182" cy="945.6656" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1674.7141" cy="967.4614" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1696.51" cy="989.2573" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1624.8519" cy="951.9361" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1646.6477" cy="973.7319" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1668.4436" cy="995.5278" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1599.2823" cy="955.7098" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1621.0781" cy="977.5057" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1593.0118" cy="983.7762" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+          <circle cx="1567.4422" cy="987.5499" r="6.238" style="fill: #fff; stroke-width: 0px;"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
