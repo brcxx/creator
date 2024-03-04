@@ -12,7 +12,6 @@ prepros.config
 ### Sass ###
 .sass-cache/
 # *.css.map
-*.css
 
 
 ### Node ###
