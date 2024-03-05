@@ -1,6 +1,7 @@
 .btn {
+  @include flex-center;
+  justify-content: space-between;
   position: relative;
-  display: inline-block;
   margin: 0 px-em(8);
   padding: px-em(8) px-em(24);
   border-radius: 3rem;
@@ -14,30 +15,28 @@
     background: $complementary-700;
   }
 
+  &::after {
+    content: "";
+    background: url(../images/icon-arrow--white.svg);
+    @include size(15px, 12px);
+    position: absolute;
+    top: 19px;
+    display: block;
+  }
+
   &--md {
     min-width: 187px;
-
+    
     &::after {
-      content: "";
-      background: url(../images/icon-arrow--white.svg);
-      @include size(15px, 12px);
-      position: absolute;
-      top: 19px;
-      right: px-em(24);
-      display: block;
+      right: px-em(32);
     }
+
   }
 
   &--l {
     min-width: 200px;
     &::after {
-      content: "";
-      background: url(../images/icon-arrow--white.svg);
-      @include size(15px, 12px);
-      position: absolute;
-      top: 19px;
-      right: px-em(20);
-      display: block;
+      right: px-em(24);
     }
   }
 
@@ -47,8 +46,13 @@
 
 
   &-apply {
+    display: inline-block;
     font-size: 28px;
     font-weight: $bold;
+
+    &::after {
+      display: none;
+    }
   }
   
 }

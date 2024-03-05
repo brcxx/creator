@@ -142,6 +142,110 @@ button {
   overflow: hidden;
 }
 
+.section-kv {
+  position: relative;
+  overflow: hidden;
+  min-height: 990px;
+}
+.section-kv__decobox * {
+  position: absolute;
+}
+.section-kv__bg {
+  min-height: 990px;
+  background: #53e8cf;
+}
+.section-kv__circle {
+  position: relative;
+  width: 100%;
+  height: 990px;
+  background: url(../images/kv-background-circle.svg) no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+  z-index: 2;
+}
+.section-kv__corner {
+  width: 515px;
+  height: 515px;
+  left: calc(50% + 28em);
+  bottom: 0;
+}
+.section-kv__marquee {
+  top: -4.375em;
+  left: calc(50% - 87.5em);
+  width: 100%;
+  height: 100%;
+  background: url(../images/kv-bg-marquee.svg) no-repeat;
+  background-size: auto 100%;
+}
+.section-kv__cat01 {
+  width: 100px;
+  height: 100px;
+  left: calc(50% - 57.3125em);
+  bottom: 13.75em;
+}
+.section-kv__cat02 {
+  width: 100px;
+  height: 100px;
+  top: 24.125em;
+  left: calc(50% + 50.5em);
+}
+.section-kv__d-girl {
+  width: 1920px;
+  height: 900px;
+  z-index: 5;
+  top: 0;
+  left: calc(50% - 60em);
+}
+.section-kv__shine01 {
+  width: 48px;
+  height: 65px;
+  top: 30.75em;
+  left: calc(50% + 21.5em);
+  z-index: 4;
+}
+.section-kv__shine02 {
+  width: 109px;
+  height: 159px;
+  top: 6.5em;
+  left: calc(50% - 19.75em);
+  z-index: 4;
+}
+.section-kv__textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 6;
+  max-width: 1440px;
+  margin: -23.8125em auto auto;
+}
+.section-kv__main-title {
+  width: 1427px;
+  height: 191px;
+}
+.section-kv__sec-title {
+  width: 688px;
+  height: 68px;
+  padding-top: 0.875em;
+}
+.section-kv .icon-line {
+  width: 554px;
+  height: 553px;
+}
+.section-kv__line01 {
+  top: 7.25em;
+  left: calc(50% - 90em);
+}
+.section-kv__line02 {
+  top: -6.5em;
+  left: calc(50% + 36.6875em);
+}
+.section-kv__line03 {
+  bottom: -26.875em;
+  left: calc(50% - 5.875em);
+}
+
 .section {
   padding-top: 70px;
 }
@@ -426,73 +530,12 @@ button {
   z-index: 1;
 }
 
-.section-kv {
-  position: relative;
-  overflow: hidden;
-  min-height: 1050px;
-}
-.section-kv__decobox * {
-  position: absolute;
-}
-.section-kv__bg {
-  min-height: 1050px;
-  background: #53e8cf;
-}
-.section-kv__circle {
-  position: relative;
-  width: 100%;
-  height: 1050px;
-  background: url(../images/kv-background-circle.svg) no-repeat;
-  background-position: center top;
-  background-size: auto 100%;
-  z-index: 2;
-}
-.section-kv__corner {
-  width: 515px;
-  height: 515px;
-  left: calc(50% + 30em);
-  bottom: 0;
-}
-.section-kv__marquee {
-  top: -4.375em;
-  left: calc(50% - 87.5em);
-  width: 100%;
-  height: 100%;
-  background: url(../images/kv-bg-marquee_1.svg) no-repeat;
-  background-size: auto 100%;
-}
-.section-kv__cat01 {
-  width: 100px;
-  height: 100px;
-  left: calc(50% - 57.3125em);
-  bottom: 13.75em;
-}
-.section-kv__cat02 {
-  width: 100px;
-  height: 100px;
-  top: 24.125em;
-  left: calc(50% + 50.5em);
-}
-.section-kv__main-visual {
-  top: 1.875em;
-  left: calc(50% - 30em);
-  z-index: 5;
-}
-.section-kv__dgirl {
-  position: relative;
-  width: 1080px;
-  height: 900px;
-}
-.section-kv__shine01 {
-  width: 49px;
-  height: 66px;
-  top: 30.6875em;
-  left: calc(50% + 21.375em);
-}
-
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
-  display: inline-block;
   margin: 0 0.5em;
   padding: 0.5em 1.5em;
   border-radius: 3rem;
@@ -505,38 +548,37 @@ button {
 .btn:hover {
   background: #cf176a;
 }
-.btn--md {
-  min-width: 187px;
-}
-.btn--md::after {
+.btn::after {
   content: "";
   background: url(../images/icon-arrow--white.svg);
   width: 15px;
   height: 12px;
   position: absolute;
   top: 19px;
-  right: 1.5em;
   display: block;
+}
+.btn--md {
+  min-width: 187px;
+}
+.btn--md::after {
+  right: 2em;
 }
 .btn--l {
   min-width: 200px;
 }
 .btn--l::after {
-  content: "";
-  background: url(../images/icon-arrow--white.svg);
-  width: 15px;
-  height: 12px;
-  position: absolute;
-  top: 19px;
-  right: 1.25em;
-  display: block;
+  right: 1.5em;
 }
 .btn--xl {
   min-width: 280px;
 }
 .btn-apply {
+  display: inline-block;
   font-size: 28px;
   font-weight: 700;
+}
+.btn-apply::after {
+  display: none;
 }
 
 @keyframes skewX {
