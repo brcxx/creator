@@ -1,3 +1,82 @@
 @media screen and (max-width:($pcrwd-breakpoint * 1px)) {
 
+  .container {
+    padding: 0 vw(16px);
+  }
+
+  .section-kv {
+    min-height: vw($h);
+
+    &__bg {
+      min-height: vw($h);
+    }
+
+    &__circle {
+      height: vw($h);
+      background: url(../images/kv-background-circle.svg)no-repeat;
+      background-position: center top;
+      background-size: auto 100%;
+      z-index: 2;
+    }
+
+    &__textbox {
+      margin: vw(-300px) auto;
+    }
+
+    &__d-girl {
+      @include size(vw(1920px), vw(900px));
+      @include center;
+    }
+
+    &__shine01 {
+      @include size(vw(48px), vw(65px));
+      top: vw(492px);
+      left: calc(50% + vw(344px));
+    }
+  
+    &__shine02 {
+      @include size(vw(109px), vw(159px));
+      top: vw(104px);
+      left: calc(50% + vw(-316px));
+      z-index: 4;
+    }
+  
+    &__main-title {
+      max-width: vw(1427px); 
+    }
+  
+    &__sec-title {
+      max-width: vw(688px);
+      margin: 0 auto;
+      padding-top: px-em(14);
+    }
+  }
+
+  .section {
+    padding-top: vw(100px);
+    &-chapter {
+      padding-top: vw(200px);
+    }
+    &-step {
+      padding-top: vw(200px);
+      &__content {
+        display: block
+      }
+
+      &__item {
+        flex-direction: row;
+        max-width: vw(540px);
+      }
+
+      .arrow {
+        @include size (vw(25px), vw(210px));
+        margin:0 vw(48px);
+      }
+    }
+
+    &-apply {
+      padding: vwm(40px) 0;
+      box-shadow: (0 vwm(-10px) vwm(40px)) rgba(0, 0, 0, .3);
+    }
+  }
 }

@@ -1,3 +1,246 @@
 @media screen and (max-width:($mbrwd-breakpoint * 1px)) {
 
+  .container {
+    padding: 0 vwm(40px);
+  }
+
+  .section {
+    padding-top: vwm(150px);
+
+    &::before,&::after {
+      padding-bottom: vwm(232px);
+    }
+
+    &:nth-child(2) {
+
+      &::before {
+        top: vwm(-100px);
+        background-position: left 16% bottom;
+      }
+
+      &::after {
+        bottom: vwm(-150px);
+        background-position: right 60% center;
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        background-position: left 60% bottom;
+      }
+    }
+
+    // 底下內容 decobox
+  .decobox {
+
+    &__circle {
+
+      &-blue01 {
+        @include size (vwm(205px));
+        left: calc(50% + vwm(264px));
+        top: vwm(800px);
+        z-index: 2;
+      }
+
+      &-blue02 {
+        @include size(vwm(106px));
+        top: vwm(45px);
+        left: calc(50% + vwm(-356px));
+      }
+
+      &-pink {
+        @include size(70px);
+        top: px-em(55);
+        left: calc(50% + px-em(519));
+      }
+      
+      &-purple {
+        @include size(188px);
+        top: px-em(496);
+        left: calc(50% + px-em(-825));
+      }
+
+      &-blue-xs {
+        @include size(82px);
+        left: calc(50% + px-em(-651));
+        top: px-em(900);
+      }
+
+      &-yellow01 {
+        @include size(367px);
+        left: calc(50% + px-em(-945));
+        bottom: px-em(-205);
+      }
+
+      &-yellow02 {
+        @include size(375px);
+        left: calc(50% + px-em(470));
+        top: px-em(240);
+      }
+    }
+
+    &__vector {
+
+      &-slash {
+        @include size(vwm(363px));
+        left: calc(50% + vwm(-610px));
+        top: vwm(48px);
+        &.right {
+          top: px-em(420);
+          left: calc(50% + px-em(624));
+        }
+      }
+      &-dots {
+        @include size(71px, 176px);
+        top: px-em(340);
+        left: calc(50% + px-em(788));
+        &.left {
+          top: px-em(997);
+          left: calc(50% + px-em(-885));
+        }
+      }
+
+    }
+
+    &__line {
+      &-yellow {
+        @include size(vwm(850px));
+        top: vwm(-40px);
+        left: calc(50% + vwm(-1050px));
+      }
+
+      &-purple {
+        @include size(717px);
+        bottom: px-em(-482);
+        left: calc(50% + px-em(606));
+        transform: rotateY(180deg);
+      }
+    }
+
+  }
+
+    &-heading {
+
+      &__about {
+        @include size (vwm(413px), vwm(48px));
+      }
+      &__intro {
+        @include size (vwm(590px), vwm(48px));
+      }
+      &__free {
+        @include size (vwm(700px), vwm(70px));
+      }
+      &__pro {
+        @include size (vwm(600px), vwm(65px));
+      }
+      &__more {
+        @include size (vwm(600px), vwm(70px));
+      }
+      &__apply {
+        @include size (vwm(400px), vwm(60px));
+      }
+  
+      &__text {
+        padding: vwm(32px) 0;
+        font-size: vwm(33px);
+      }
+    }
+
+    &-btnbox {
+      @include flex-column;
+    }
+
+    &-intro {
+      &__inner {
+        padding-bottom: vwm(50px);
+      }
+    }
+
+    &-chapter {
+      padding-top: vwm(200px);
+
+      &__content {
+        @include flex-column;
+        flex-direction: column-reverse;
+        padding-bottom: vwm(140px);
+  
+        &.reverse {
+          flex-direction: column-reverse;
+        }
+      }
+
+      &__textbox {
+        margin-top: vwm(36px);
+      }
+
+      &__imgbox {
+        &.d-girl01 {
+          @include size(vwm(517px), vwm(376px))
+        }
+
+        &.d-girl02 {
+          @include size(vwm(469px), vwm(402px))
+        }
+
+        .inner {
+          @include flex-column;
+
+          &__item {
+            flex-direction: row;
+            &-img {
+              @include size ( vwm(155px), vwm(155px))
+            }
+
+            &-name {
+              font-size: vwm(36px);
+            }
+          }
+        }
+      }
+    }
+
+    &-step {
+      padding-top: vwm(200px);
+      padding-bottom: vwm(90px);
+
+      &__rule {
+        padding: vwm(24px) 0;
+        font-size: vwm(40px);
+      }
+
+      &__content {
+        margin: vwm(65px) 0 vwm(115px);
+      }
+
+      &__item {
+        max-width: vwm(540px);
+        
+        &-img {
+          @include size (vwm(222px), vwm(200px))
+        }
+  
+        &-text {
+          padding: vwm(8px) 0 vwm(24px);
+          margin-left: vwm(24px);
+          font-size: vwm(32px);
+          .title {
+            font-size: vwm(48px);
+          }
+          .num {
+            font-size: vwm(72px);
+            margin-right: vwm(-12px);
+          }
+          .step {
+            font-size: vwm(33px);
+          }
+        }
+  
+        .arrow {
+          @include size (vwm(50px), vwm(105px));
+          margin:0 vwm(48px);
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
 }

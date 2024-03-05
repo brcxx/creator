@@ -76,19 +76,19 @@
   }
 
   &__textbox {
-    @include flex-column;
     position: relative;
     z-index: 6;
-    max-width: 1440px;
-    margin: px-em(-381) auto auto;
+    margin: px-em(-381) auto;
   }
 
   &__main-title {
-    @include size(1427px, 191px);
+    max-width: 1427px; 
+    margin: 0 auto;
   }
 
   &__sec-title {
-    @include size(688px, 68px);
+    max-width: 688px;
+    margin: 0 auto;
     padding-top: px-em(14);
   }
 
@@ -236,6 +236,7 @@
         @include size(717px);
         top: px-em(-14);
         left: calc(50% + px-em(-1280));
+        z-index: 3;
       }
 
       &-purple {
@@ -287,9 +288,12 @@
   &-intro {
     background: #dafffa;
     position: relative;
+    z-index: 3;
 
     &__inner {
       padding-bottom: 50px;
+      position: relative;
+      z-index: 3;
     }
   }
 
@@ -311,12 +315,11 @@
       &.reverse {
         flex-direction: row-reverse;
       }
-    }
 
-    &__textbox {
     }
 
     &__imgbox {
+
       .inner {
         @include flex-center;
 
@@ -353,7 +356,7 @@
 
   &-step {
     position: relative;
-    padding-bottom: 115px;
+    padding-bottom: 90px;
     &__rule {
       padding: 24px 0;
       font-size: 20px;

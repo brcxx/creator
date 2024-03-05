@@ -56,3 +56,37 @@
   }
   
 }
+
+@media screen and (max-width:($mbrwd-breakpoint * 1px)) {
+  .btn {
+    justify-content: center;
+    margin: vwm(16px) auto;
+    font-size: vwm(36px);
+    &--md,&--l {
+      width: 60%;
+
+      &::after {
+        @include size(vwm(30px), vwm(24px));
+        top: vwm(38px);
+      }
+    }
+
+    &--md {
+      &::after {
+        right: vwm(64px);
+      }
+    }
+  
+    &--l {
+      &::after {
+        right: vwm(48px);
+      }
+    }
+
+    &-apply {
+      font-size: vwm(56px);
+  
+    }
+
+  }
+}

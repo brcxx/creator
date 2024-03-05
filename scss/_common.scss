@@ -1,27 +1,28 @@
+// 共用區域
+
 .container {
   max-width:$pcrwd-breakpoint + px;
   padding: 0 16px;
   margin: 0 auto;
 }
 
-
 .logo {
   @include size (198px, 33px);
 }
 
 .header {
-  background: $complementary;
-  padding: 16px 0;
   position: absolute;
   top: 0;
+  padding: 16px 0;
   width: 100%;
+  background: $complementary;
   z-index: 3;
 }
 
 .footer {
+  position: relative;
   background: $analogous;
   color: $white;
-  position: relative;
 
 
   &-info {
@@ -29,11 +30,32 @@
     text-align: center;
 
     .logo {
-      margin: auto;
+      margin: 0 auto;
     }
   }
 
   .copy-right {
     padding-top: 16px;
   }
+}
+
+@media screen and (max-width:($mbrwd-breakpoint * 1px)) {
+
+  .logo {
+    @include size (vwm(396px), vwm(66px));
+  }
+
+  .footer {
+  
+    &-info {
+      padding: vwm(16px) 0 vwm(24px);
+  
+    }
+  
+    .copy-right {
+      padding: vwm(32px) 0;
+      font-size: vwm(28px);
+    }
+  }
+
 }
