@@ -151,7 +151,7 @@
 
   &:nth-child(3) {
     &::after {
-      bottom: 0;
+      bottom: px-em(-5);
       background: url(../images/bg-green--wave.svg) no-repeat;
       background-size: cover;
       background-position: center top;

@@ -282,7 +282,7 @@ button {
   z-index: -1;
 }
 .section:nth-child(3)::after {
-  bottom: 0;
+  bottom: -0.3125em;
   background: url(../images/bg-green--wave.svg) no-repeat;
   background-size: cover;
   background-position: center top;
