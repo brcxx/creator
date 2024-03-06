@@ -221,5 +221,28 @@
     </div>
   </div>
   <!-- 主視覺 結束 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script>
+    // 控制 scroll 
+    function handleScroll() {
+      var document$documentEle = document.documentElement,
+      scrollTop = document$documentEle.scrollTop,
+      scrollHeight = document$documentEle.scrollHeight,
+      clientHeight = document$documentEle.clientHeight;
+
+      // var noticeHeight = $(".section-notice").outerHeight();
+      var footerHeight = $("footer").outerHeight();
+      // var nav = $("nav.nav-wrap.nav-wrap--fixed");
+
+      // 畫面滾動到注意事項時，取消nav fixed
+      if (scrollTop + clientHeight + footerHeight + 150 >= scrollHeight) {
+        $('.section-apply').addClass("nav-wrap--fixed__mbl-clear-fixed");
+      } else {
+        $('.section-apply').removeClass("nav-wrap--fixed__mbl-clear-fixed");
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  </script>
 </body>
 </html>
