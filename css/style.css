@@ -130,8 +130,12 @@ button {
 
 @media screen and (max-width: 768px) {
   .logo {
-    width: 51.5625vw;
-    height: 8.59375vw;
+    width: 35.6770833333vw;
+    height: 6.25vw;
+    margin: auto;
+  }
+  .header {
+    padding: 3.125vw 0;
   }
   .footer-info {
     padding: 2.0833333333vw 0 3.125vw;
@@ -611,6 +615,63 @@ button {
   .container {
     padding: 0 5.2083333333vw;
   }
+  .section-kv {
+    min-height: 128.90625vw;
+  }
+  .section-kv__bg {
+    min-height: 128.90625vw;
+  }
+  .section-kv__circle {
+    height: 128.90625vw;
+    background-position: right 45% center;
+  }
+  .section-kv__marquee {
+    top: -36.4583333333vw;
+    left: calc(50% - 114.5833333333vw);
+  }
+  .section-kv__cat01 {
+    width: 13.0208333333vw;
+    height: 13.0208333333vw;
+    left: calc(50% - 39.0625vw);
+    bottom: 36.4583333333vw;
+  }
+  .section-kv__d-girl {
+    width: 221.3541666667vw;
+    height: 97.65625vw;
+  }
+  .section-kv__shine01 {
+    width: 6.25vw;
+    height: 8.4635416667vw;
+    top: 62.5vw;
+    left: calc(50% + 35.15625vw);
+  }
+  .section-kv__shine02 {
+    width: 14.1927083333vw;
+    height: 20.703125vw;
+    top: 23.4375vw;
+    left: calc(50% - 35.15625vw);
+  }
+  .section-kv__textbox {
+    width: 95%;
+    margin: -32.5520833333vw auto;
+  }
+  .section-kv__sec-title {
+    max-width: 89.5833333333vw;
+    padding-top: 1.8229166667vw;
+  }
+  .section-kv .icon-line {
+    width: 72.1354166667vw;
+    height: 72.0052083333vw;
+  }
+  .section-kv__line02 {
+    top: 6.5104166667vw;
+    left: calc(50% + 39.0625vw);
+    z-index: 2;
+  }
+  .section-kv__line03 {
+    bottom: -55.9895833333vw;
+    left: calc(50% - 15.625vw);
+  }
   .section {
     padding-top: 19.53125vw;
   }
@@ -622,16 +683,16 @@ button {
     background-position: left 16% bottom;
   }
   .section:nth-child(2)::after {
-    bottom: -19.53125vw;
-    background-position: right 60% center;
+    bottom: -29.9479166667vw;
+    background-position: right 55% center;
   }
   .section:nth-child(3)::after {
-    background-position: left 60% bottom;
+    background-position: left 56% bottom;
   }
   .section .decobox__circle-blue01 {
-    width: 26.6927083333vw;
-    height: 26.6927083333vw;
-    left: calc(50% + 34.375vw);
+    width: 30.5989583333vw;
+    height: 30.5989583333vw;
+    left: calc(50% + 29.9479166667vw);
     top: 104.1666666667vw;
     z-index: 2;
   }
@@ -642,16 +703,16 @@ button {
     left: calc(50% - 46.3541666667vw);
   }
   .section .decobox__circle-pink {
-    width: 70px;
-    height: 70px;
-    top: 3.4375em;
-    left: calc(50% + 32.4375em);
+    width: 9.1145833333vw;
+    height: 9.1145833333vw;
+    top: 11.71875vw;
+    left: calc(50% + 14.9739583333vw);
   }
   .section .decobox__circle-purple {
-    width: 188px;
-    height: 188px;
-    top: 31em;
-    left: calc(50% - 51.5625em);
+    width: 24.4791666667vw;
+    height: 24.4791666667vw;
+    top: 140.625vw;
+    left: calc(50% - 58.59375vw);
   }
   .section .decobox__circle-blue-xs {
     width: 82px;
@@ -660,16 +721,16 @@ button {
     top: 56.25em;
   }
   .section .decobox__circle-yellow01 {
-    width: 367px;
-    height: 367px;
-    left: calc(50% - 59.0625em);
-    bottom: -12.8125em;
+    width: 33.8541666667vw;
+    height: 33.8541666667vw;
+    left: calc(50% - 61.1979166667vw);
+    bottom: -28.6458333333vw;
   }
   .section .decobox__circle-yellow02 {
-    width: 375px;
-    height: 375px;
-    left: calc(50% + 29.375em);
-    top: 15em;
+    width: 39.0625vw;
+    height: 39.0625vw;
+    left: calc(50% + 31.25vw);
+    top: 156.25vw;
   }
   .section .decobox__vector-slash {
     width: 47.265625vw;
@@ -678,18 +739,19 @@ button {
     top: 6.25vw;
   }
   .section .decobox__vector-slash.right {
-    top: 26.25em;
-    left: calc(50% + 39em);
+    width: 39.0625vw;
+    height: 39.0625vw;
+    top: 174.4791666667vw;
+    left: calc(50% + 39.0625vw);
   }
   .section .decobox__vector-dots {
-    width: 71px;
-    height: 176px;
-    top: 21.25em;
-    left: calc(50% + 49.25em);
+    width: 11.71875vw;
+    height: 11.71875vw;
   }
   .section .decobox__vector-dots.left {
-    top: 62.3125em;
-    left: calc(50% - 55.3125em);
+    top: auto;
+    bottom: 9.1145833333vw;
+    left: calc(50% - 55.9895833333vw);
   }
   .section .decobox__line-yellow {
     width: 110.6770833333vw;
@@ -698,11 +760,10 @@ button {
     left: calc(50% - 136.71875vw);
   }
   .section .decobox__line-purple {
-    width: 717px;
-    height: 717px;
-    bottom: -30.125em;
-    left: calc(50% + 37.875em);
-    transform: rotateY(180deg);
+    width: 93.359375vw;
+    height: 93.359375vw;
+    bottom: -71.6145833333vw;
+    left: calc(50% + 26.0416666667vw);
   }
   .section-heading__about {
     width: 53.7760416667vw;
@@ -725,7 +786,7 @@ button {
     height: 9.1145833333vw;
   }
   .section-heading__apply {
-    width: 52.0833333333vw;
+    width: 39.5833333333vw;
     height: 7.8125vw;
   }
   .section-heading__text {
@@ -788,7 +849,7 @@ button {
   }
   .section-step__rule {
     padding: 3.125vw 0;
-    font-size: 5.2083333333vw;
+    font-size: 4.296875vw;
   }
   .section-step__content {
     margin: 8.4635416667vw 0 14.9739583333vw;
@@ -810,7 +871,7 @@ button {
   }
   .section-step__item-text .num {
     font-size: 9.375vw;
-    margin-right: -1.5625vw;
+    margin-right: -1.0416666667vw;
   }
   .section-step__item-text .step {
     font-size: 4.296875vw;
@@ -830,7 +891,7 @@ button {
   position: relative;
   margin: 0 0.5em;
   padding: 0.5em 1.5em;
-  border-radius: 3rem;
+  border-radius: 4rem;
   font-size: 20px;
   font-weight: 500;
   color: #ffffff;
@@ -846,7 +907,6 @@ button {
   width: 15px;
   height: 12px;
   position: absolute;
-  top: 19px;
   display: block;
 }
 .btn--md {
@@ -880,18 +940,22 @@ button {
     font-size: 4.6875vw;
   }
   .btn--md, .btn--l {
-    width: 60%;
+    width: 50%;
+    min-width: auto;
   }
   .btn--md::after, .btn--l::after {
     width: 3.90625vw;
     height: 3.125vw;
-    top: 4.9479166667vw;
   }
   .btn--md::after {
-    right: 8.3333333333vw;
+    right: 6.25vw;
   }
   .btn--l::after {
-    right: 6.25vw;
+    right: 4.6875vw;
+  }
+  .btn--xl {
+    width: 60%;
+    min-width: 36.4583333333vw;
   }
   .btn-apply {
     font-size: 7.2916666667vw;

@@ -42,7 +42,12 @@
 @media screen and (max-width:($mbrwd-breakpoint * 1px)) {
 
   .logo {
-    @include size (vwm(396px), vwm(66px));
+    @include size (vwm(274px), vwm(48px));
+    margin: auto;
+  }
+
+  .header {
+    padding: vwm(24px) 0;
   }
 
   .footer {

@@ -4,7 +4,7 @@
   position: relative;
   margin: 0 px-em(8);
   padding: px-em(8) px-em(24);
-  border-radius: 3rem;
+  border-radius: 4rem;
   font-size: 20px;
   font-weight: $medium;
   color: $white;
@@ -20,7 +20,6 @@
     background: url(../images/icon-arrow--white.svg);
     @include size(15px, 12px);
     position: absolute;
-    top: 19px;
     display: block;
   }
 
@@ -63,24 +62,29 @@
     margin: vwm(16px) auto;
     font-size: vwm(36px);
     &--md,&--l {
-      width: 60%;
+      width: 50%;
+      min-width: auto;
 
       &::after {
         @include size(vwm(30px), vwm(24px));
-        top: vwm(38px);
       }
     }
 
     &--md {
       &::after {
-        right: vwm(64px);
+        right: vwm(48px);
       }
     }
   
     &--l {
       &::after {
-        right: vwm(48px);
+        right: vwm(36px);
       }
+    }
+
+    &--xl {
+      width: 60%;
+      min-width: vwm(280px);
     }
 
     &-apply {
