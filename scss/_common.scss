@@ -11,19 +11,20 @@
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   padding: 16px 0;
   width: 100%;
   background: $complementary;
-  z-index: 3;
+  z-index: 999;
 }
 
 .footer {
+  @include flex-center;
   position: relative;
   background: $analogous;
   color: $white;
-
+  max-height: 100px;
 
   &-info {
     padding: 16px 0 24px;
@@ -51,7 +52,7 @@
   }
 
   .footer {
-  
+    max-height: vwm(200px);
     &-info {
       padding: vwm(16px) 0 vwm(24px);
   

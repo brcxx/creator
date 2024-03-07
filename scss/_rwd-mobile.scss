@@ -242,6 +242,7 @@
       }
 
       &__imgbox {
+        
         &.d-girl01 {
           @include size(vwm(517px), vwm(376px))
         }
@@ -309,6 +310,11 @@
           transform: rotate(90deg);
         }
       }
+    }
+
+    &-apply {
+      padding: vwm(16px) 0;
+      box-shadow: (0 -5px 20px) rgba(0, 0, 0, .3);
     }
   }
 }

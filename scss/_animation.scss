@@ -71,18 +71,18 @@
 
 @keyframes swing {
   0% {
-      -webkit-transform: rotate(-2deg);
-      transform: rotate(-2deg)
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg)
   }
 
   50% {
-      -webkit-transform: rotate(2deg);
-      transform: rotate(2deg)
+      -webkit-transform: rotate(5deg);
+      transform: rotate(5deg)
   }
 
   to {
-      -webkit-transform: rotate(-2deg);
-      transform: rotate(-2deg)
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg)
   }
 }
 
