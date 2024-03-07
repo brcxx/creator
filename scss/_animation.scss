@@ -108,6 +108,13 @@
   100% { opacity: 1; }
 }
 
+@keyframes wave{
+
+  100% {
+    background-position: 10% bottom;
+  }
+}
+
 // scrollAnimation
 
 .animate {

@@ -7,13 +7,13 @@
 	.st1{fill:#8DFFF6;}
 
 	@keyframes marquee {
-    0%   { transform: translateX(100%); }
+    0%   { transform: translateX(0%); }
 
-    100% { transform: translateX(-100%); }
+    100% { transform: translateX(-50%); }
 }
 
 	.marquee {
-		animation: marquee 14s linear infinite;
+		animation: marquee 15s linear infinite;
 	}
 
 </style>

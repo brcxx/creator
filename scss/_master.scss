@@ -154,6 +154,7 @@
       background-size: cover;
       background-position: center bottom;
       background-repeat: repeat-x;
+      animation: wave 5s infinite linear alternate-reverse;
     }
 
     &::after {
@@ -163,6 +164,7 @@
       background-position: center bottom;
       background-repeat: repeat-x;
       z-index: -1;
+      animation: wave 5s infinite linear alternate-reverse;
     }
   }
 
@@ -173,6 +175,7 @@
       background-size: cover;
       background-position: center top;
       background-repeat: repeat-x;
+      animation: wave 5s infinite linear alternate-reverse;
     }
   }
 

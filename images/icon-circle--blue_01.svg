@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344.8895 344.8894">
-  <g id="website_mainpage" style="isolation: isolate;">
-    <g id="_橢圓_7" data-name="橢圓 7">
-      <circle cx="172.4448" cy="172.4447" r="172.4447" transform="translate(-71.4289 172.4447) rotate(-45)" style="fill: #8dfff7; stroke-width: 0px;"/>
-    </g>
-  </g>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+  <path fill="#8dfff7">
+    <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M454.5,332Q414,414,332,453.5Q250,493,165,456.5Q80,420,51,335Q22,250,52.5,166.5Q83,83,166.5,51Q250,19,333,51.5Q416,84,455.5,167Q495,250,454.5,332Z;
+    
+    M454.5,332Q414,414,332,453.5Q250,493,165,456.5Q80,420,51,335Q22,250,52.5,166.5Q83,83,166.5,51Q250,19,333,51.5Q416,84,455.5,167Q495,250,454.5,332Z;
+
+    M437,319Q388,388,319,434Q250,480,172,443Q94,406,80,328Q66,250,85,177Q104,104,177,80.5Q250,57,322,81.5Q394,106,440,178Q486,250,437,319Z;
+    
+    M454.5,332Q414,414,332,453.5Q250,493,165,456.5Q80,420,51,335Q22,250,52.5,166.5Q83,83,166.5,51Q250,19,333,51.5Q416,84,455.5,167Q495,250,454.5,332Z;">
+    </animate>
+  </path>
 </svg>
