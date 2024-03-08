@@ -243,11 +243,11 @@
 
       &__imgbox {
         
-        &.d-girl01 {
+        .d-girl01 {
           @include size(vwm(517px), vwm(376px))
         }
 
-        &.d-girl02 {
+        .d-girl02 {
           @include size(vwm(469px), vwm(402px))
         }
 

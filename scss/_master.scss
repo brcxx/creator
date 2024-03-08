@@ -34,24 +34,13 @@
   }
 
   &__marquee {
-    top: px-em(-70);
-    left: calc(50% + px-em(-1400));
+    top: px-em(-90);
+    left: calc(50% + px-em(-1300));
     width: 100%;
     height: 100%;
     background: url(../images/kv-bg-marquee.svg)no-repeat;
     background-size: auto 100%;
-
-    &-text {
-      top: px-em(-70);
-      left: calc(50% + px-em(-2175));
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      background: url(../images/kv-bg-marquee--text.svg)no-repeat;
-      background-size: cover;
-      background-position: center;
-      transform: rotate(-45deg);
-    }
+    overflow: hidden;
   }
 
 
@@ -82,14 +71,23 @@
     top: px-em(492);
     left: calc(50% + px-em(344));
     z-index: 4;
-    animation: fade 5s ease infinite;
+    animation: shine 2s infinite alternate-reverse;
   }
 
   &__shine02 {
-    @include size(109px, 159px);
-    top: px-em(104);
+    @include size(77px, 105px);
+    top: px-em(156);
     left: calc(50% + px-em(-316));
     z-index: 4;
+    animation: shine 2s infinite alternate-reverse;
+  }
+
+  &__shine03 {
+    @include size(50px, 67px);
+    top: px-em(190);
+    left: calc(50% + px-em(-316));
+    animation: shine 2s infinite alternate-reverse;
+    animation-delay: .8s;
   }
 
   &__textbox {
@@ -154,7 +152,7 @@
       background-size: cover;
       background-position: center bottom;
       background-repeat: repeat-x;
-      animation: wave 5s infinite linear alternate-reverse;
+      animation: wave 3s infinite linear alternate-reverse;
     }
 
     &::after {
@@ -163,19 +161,19 @@
       background-size: cover;
       background-position: center bottom;
       background-repeat: repeat-x;
-      z-index: -1;
-      animation: wave 5s infinite linear alternate-reverse;
+      z-index: 1;
+      animation: wave 3s infinite linear alternate-reverse;
     }
   }
 
-  &:nth-child(3) {
+  &:nth-child(4) {
     &::after {
       bottom: px-em(-5);
-      background: url(../images/bg-green--wave.svg) no-repeat;
+      background: url(../images/bg-green--wave.svg);
       background-size: cover;
-      background-position: center top;
+      background-position: center bottom;
       background-repeat: repeat-x;
-      animation: wave 5s infinite linear alternate-reverse;
+      animation: wave 3s infinite linear alternate-reverse;
     }
   }
 
@@ -183,6 +181,7 @@
   .decobox {
     * {
       position: absolute;
+      z-index: 5;
     }
 
     &__circle {
@@ -284,12 +283,16 @@
     &__pro {
       @include size (347px, 46px);
     }
+    &__daren {
+      @include size (331px, 38px);
+    }
     &__more {
       @include size (317px, 48px);
     }
     &__apply {
       @include size (246px, 40px);
     }
+
 
     &__text {
       padding: 30px 0;
@@ -378,6 +381,130 @@
       }
 
     }
+  }
+
+  &-daren {
+    background: #dafffa; 
+
+    &__title {
+      position: relative;
+      margin-left: 46px;
+      font-size: 32px;
+      font-weight: $bold;
+      color: $primary-900;
+
+      &-icon {
+        &::before {
+          @include size(46px, 38px);
+          content: "";
+          position: absolute;
+          background: url(../images/icon-forum.svg)no-repeat;
+          background-position: center top;
+          top: 5px;
+          left: -56px;
+        }
+
+        &.home {
+          &::before {
+            @include size(46px, 38px);
+            background: url(../images/icon-home.svg)no-repeat;
+          }
+        }
+      }
+    }
+
+    &__content {
+      @include flex-center;
+      margin-top: 24px;
+    }
+
+    &__item {
+      display: inline-block;
+      margin-bottom: 16px;
+    }
+
+    &__infobox {
+      @include size(575px, 378px);
+      position: relative;
+      background: $primary-900;
+      border-radius: 16px;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+      }
+
+      &.box-sm {
+        height: 246px;
+      }
+
+      &.box-xl {
+        @include size(451px, 684px);
+      }
+
+      &-img {
+        @include flex-center;
+        @include center;
+        width: 100%;
+        height: 100%;
+      }
+
+      &-tag {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 8px 12px;
+        font-size: 16px;
+        color: $white;
+        background: rgba(0, 183, 146, .8);
+        border-radius: 0 0 16px 0;
+        z-index: 6;
+      }
+
+      &-heading {
+        position: absolute;
+        bottom: 0;
+        padding: 16px;
+        font-size: 20px;
+        font-weight: $bold;
+        color: $white;
+        z-index: 5;
+        line-height: 1.5;
+
+      }
+    }
+
+    &__authorbox {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      .profile {
+        @include size (36px);
+        @include flex-center;
+        background: $primary-900;
+        border-radius: 100%;
+
+      }
+      .name {
+        padding:0 8px;
+        font-size: 15px;
+        font-weight: $medium;
+      }
+      .count {
+        color: #7e7e7e;
+      }
+      .medal {
+        @include size(22px);
+      }
+    }
+
+    
   }
 
   &-step {
