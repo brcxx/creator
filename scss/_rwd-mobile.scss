@@ -38,9 +38,15 @@
     }
 
     &__shine02 {
-      @include size(vwm(109px), vwm(159px));
+      @include size(vwm(109px), vwm(160px));
       top: vwm(180px);
       left: calc(50% + vwm(-270px));
+    }
+
+    &__shine03 {
+      @include size(vwm(100px), vwm(134px));
+      top: vwm(190px);
+      left: calc(50% + vwm(-280px));
     }
 
     &__textbox {
@@ -74,7 +80,7 @@
 
 
   .section {
-    padding-top: vwm(150px);
+    padding: vwm(150px) 0;
 
     &::before,&::after {
       padding-bottom: vwm(232px);
@@ -89,103 +95,110 @@
 
       &::after {
         bottom: vwm(-230px);
-        background-position: right 55% center;
+        background-position: right 15% center;
       }
     }
 
     &:nth-child(3) {
+      &::after {
+        bottom: vwm(-230px);
+        background-position: left 16% bottom;
+      }
+    }
+
+    &:nth-child(4) {
       &::after {
         background-position: left 56% bottom;
       }
     }
 
     // 底下內容 decobox
-  .decobox {
+    .decobox {
 
-    &__circle {
+      &__circle {
 
-      &-blue01 {
-        @include size (vwm(235px));
-        left: calc(50% + vwm(230px));
-        top: vwm(800px);
-        z-index: 2;
-      }
+        &-blue01 {
+          @include size (vwm(235px));
+          left: calc(50% + vwm(230px));
+          top: vwm(800px);
+          z-index: 2;
+        }
 
-      &-blue02 {
-        @include size(vwm(106px));
-        top: vwm(45px);
-        left: calc(50% + vwm(-356px));
-      }
+        &-blue02 {
+          @include size(vwm(106px));
+          top: vwm(45px);
+          left: calc(50% + vwm(-356px));
+        }
 
-      &-pink {
-        @include size(vwm(70px));
-        top: vwm(90px);
-        left: calc(50% + vwm(115px));
-      }
-      
-      &-purple {
-        @include size(vwm(188px));
-        top: vwm(1080px);
-        left: calc(50% + vwm(-450px));
-      }
+        &-pink {
+          @include size(vwm(70px));
+          top: vwm(90px);
+          left: calc(50% + vwm(115px));
+        }
+        
+        &-purple {
+          @include size(vwm(188px));
+          top: vwm(1080px);
+          left: calc(50% + vwm(-450px));
+        }
 
-      &-blue-xs {
-        @include size(82px);
-        left: calc(50% + px-em(-651));
-        top: px-em(900);
-      }
+        &-blue-xs {
+          @include size(82px);
+          left: calc(50% + px-em(-651));
+          top: px-em(900);
+        }
 
-      &-yellow01 {
-        @include size(vwm(260px));
-        left: calc(50% + vwm(-470px));
-        bottom: vwm(-220px);
-      }
+        &-yellow01 {
+          @include size(vwm(260px));
+          left: calc(50% + vwm(-470px));
+          bottom: vwm(-220px);
+        }
 
-      &-yellow02 {
-        @include size(vwm(300px));
-        left: calc(50% + vwm(240px));
-        top: vwm(1200px);
-      }
-    }
-
-    &__vector {
-
-      &-slash {
-        @include size(vwm(363px));
-        left: calc(50% + vwm(-610px));
-        top: vwm(48px);
-        &.right {
+        &-yellow02 {
           @include size(vwm(300px));
-          top: vwm(1340px);
-          left: calc(50% + vwm(300px));
+          left: calc(50% + vwm(240px));
+          top: vwm(1200px);
         }
       }
-      &-dots {
-        @include size(vwm(90px));
-        &.left {
-          top: auto;
-          bottom: vwm(70px);
-          left: calc(50% + vwm(-430px));
+
+      &__vector {
+
+        &-slash {
+          @include size(vwm(363px));
+          left: calc(50% + vwm(-610px));
+          top: vwm(48px);
+          &.right {
+            @include size(vwm(300px));
+            top: vwm(1340px);
+            left: calc(50% + vwm(300px));
+          }
+        }
+        &-dots {
+          @include size(vwm(90px));
+          &.left {
+            top: auto;
+            bottom: vwm(70px);
+            left: calc(50% + vwm(-430px));
+          }
+        }
+
+      }
+
+      &__line {
+        &-yellow {
+          @include size(vwm(850px));
+          top: vwm(-40px);
+          left: calc(50% + vwm(-1050px));
+        }
+
+        &-purple {
+          @include size(vwm(717px));
+          bottom: vwm(-550px);
+          left: calc(50% + vwm(200px));
         }
       }
 
     }
-
-    &__line {
-      &-yellow {
-        @include size(vwm(850px));
-        top: vwm(-40px);
-        left: calc(50% + vwm(-1050px));
-      }
-
-      &-purple {
-        @include size(vwm(717px));
-        bottom: vwm(-550px);
-        left: calc(50% + vwm(200px));
-      }
-    }
-
-  }
 
     &-heading {
 
@@ -203,6 +216,9 @@
       }
       &__more {
         @include size (vwm(600px), vwm(70px));
+      }
+      &__daren {
+        @include size (vwm(331px), vwm(38px));
       }
       &__apply {
         @include size (vwm(304px), vwm(60px));
@@ -268,8 +284,77 @@
       }
     }
 
+    &-daren {
+      padding-top: vwm(150px);
+      &__title {
+        margin-top: vwm(80px);
+        padding-left: vwm(70px);
+        font-size: vwm(36px);
+  
+        &-icon {
+          &::before {
+            @include size(vwm(80px), vwm(60px));
+            top: 0;
+          }
+        }
+      }
+  
+      &__row {
+        @include flex-column;
+        margin: vwm(48px) auto;
+      }
+  
+      &__left {
+        padding-right: 0;
+      }
+  
+      &__item {
+        width: 100%;
+        margin-bottom: vw(48px);
+      }
+  
+      &__card,&-sm,&-md,&-xl {
+        width: 100%;
+        height: vwm(378px);
+        border-radius: vwm(32px);
+  
+        &-tag {
+          padding: vwm(8px) vwm(16px);
+          font-size: vwm(30px);
+          border-radius: 0 0 vwm(32px) 0;
+        }
+  
+        &-heading {
+          bottom: vwm(32px);
+          max-height: vwm(164px);
+          padding: vwm(32px) vwm(32px) 0;
+          font-size: vwm(33px);
+        }
+      }
+  
+      &__author {
+        font-size: vwm(32px);
+  
+        .profile {
+          @include size (vwm(48px));
+        }
+        .name {
+          padding:0 vwm(16px);
+        }
+
+        .count {
+          padding-right: vwm(8px);
+        }
+
+        .medal {
+          @include size(vwm(48px));
+        }
+      }
+  
+    }
+
     &-step {
-      padding-top: vwm(200px);
+      padding-top: vwm(150px);
       padding-bottom: vwm(90px);
 
       &__rule {

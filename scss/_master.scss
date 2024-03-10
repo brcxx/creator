@@ -34,8 +34,8 @@
   }
 
   &__marquee {
-    top: px-em(-90);
-    left: calc(50% + px-em(-1300));
+    top: px-em(-70);
+    left: calc(50% + px-em(-1400));
     width: 100%;
     height: 100%;
     background: url(../images/kv-bg-marquee.svg)no-repeat;
@@ -71,7 +71,7 @@
     top: px-em(492);
     left: calc(50% + px-em(344));
     z-index: 4;
-    animation: shine 2s infinite alternate-reverse;
+    animation: shine 1s infinite alternate-reverse;
   }
 
   &__shine02 {
@@ -79,14 +79,14 @@
     top: px-em(156);
     left: calc(50% + px-em(-316));
     z-index: 4;
-    animation: shine 2s infinite alternate-reverse;
+    animation: shine 1s infinite alternate-reverse;
   }
 
   &__shine03 {
     @include size(50px, 67px);
     top: px-em(190);
     left: calc(50% + px-em(-316));
-    animation: shine 2s infinite alternate-reverse;
+    animation: shine 1s infinite alternate-reverse;
     animation-delay: .8s;
   }
 
@@ -128,56 +128,8 @@
 }
 
 .section {
-  padding-top: 70px;
+  padding: 70px 0;
 
-  .row {
-    @include flex-column;
-  }
-
-  // bg wave上下 樣式
-  &::before,&::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    display: block;
-    width: 100%;
-    padding-bottom: 150px;
-    transform: translate(-50%);
-  }
-
-  &:nth-child(2) {
-    &::before {
-      top: 0;
-      background: url(../images/bg-gray--wave.svg);
-      background-size: cover;
-      background-position: center bottom;
-      background-repeat: repeat-x;
-      animation: wave 3s infinite linear alternate-reverse;
-    }
-
-    &::after {
-      bottom: -150px;
-      background: url(../images/bg-yellow--wave.svg);
-      background-size: cover;
-      background-position: center bottom;
-      background-repeat: repeat-x;
-      z-index: 1;
-      animation: wave 3s infinite linear alternate-reverse;
-    }
-  }
-
-  &:nth-child(4) {
-    &::after {
-      bottom: px-em(-5);
-      background: url(../images/bg-green--wave.svg);
-      background-size: cover;
-      background-position: center bottom;
-      background-repeat: repeat-x;
-      animation: wave 3s infinite linear alternate-reverse;
-    }
-  }
-
-  // 底下內容 decobox
   .decobox {
     * {
       position: absolute;
@@ -189,12 +141,22 @@
       &-blue01 {
         @include size(345px);
         left: calc(50% + px-em(560));
+
+        &.right {
+          top: 525px;
+          left: calc(50% + px-em(470));
+        }
       }
 
       &-blue02 {
         @include size(140px);
         top: px-em(45);
         left: calc(50% + px-em(-689));
+
+        &.left {
+          top: 1140px;
+          left: calc(50% + px-em(-650));
+        }
       }
 
       &-pink {
@@ -237,6 +199,11 @@
           top: px-em(420);
           left: calc(50% + px-em(624));
         }
+
+        &.left {
+          top: px-em(1172);
+          left: calc(50% + px-em(-885));
+        }
       }
       &-dots {
         @include size(71px, 176px);
@@ -245,6 +212,11 @@
         &.left {
           top: px-em(997);
           left: calc(50% + px-em(-885));
+        }
+
+        &.right {
+          top: px-em(750);
+          left: calc(50% + px-em(720));
         }
       }
 
@@ -264,18 +236,82 @@
         left: calc(50% + px-em(606));
         transform: rotateY(180deg);
       }
-    }
 
+      &-blue {
+        @include size(717px);
+        top: px-em(344);
+        left: calc(50% + px-em(-1280));
+      }
+    }
   }
 
+  // bg wave上下 樣式
+  &::before,&::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 100%;
+    padding-bottom: 160px;
+    transform: translate(-50%);
+    z-index: 1;
+  }
+
+  &:nth-child(2) {
+    &::before {
+      top: 0;
+      background: url(../images/bg-gray--wave.svg);
+      background-size: auto 100%;
+      background-position: right bottom;
+      background-repeat: repeat-x;
+      animation: wave 3s infinite linear alternate-reverse;
+    }
+
+    &::after {
+      bottom: -150px;
+      background: url(../images/bg-yellow--wave.svg);
+      background-size: auto 100%;
+      background-repeat: repeat-x;
+      animation: wave 3s infinite linear alternate-reverse;
+    }
+  }
+
+  &:nth-child(3) {
+    &::after {
+      bottom: -150px;
+      background: url(../images/bg-gray--wave.svg);
+      background-size: auto 100%;
+      background-position: right bottom;
+      background-repeat: repeat-x;
+      animation: wave 3s infinite linear alternate-reverse;
+    }
+  }
+
+  &:nth-child(4) {
+    &::after {
+      bottom: px-em(0);
+      background: url(../images/bg-green--wave.svg);
+      background-size: auto 100%;
+      background-repeat: repeat;
+      background-position: right bottom;
+      animation: wave 3s infinite linear alternate-reverse;
+    }
+  }
+
+  // 共用 style
+  .row-column {
+    @include flex-column;
+  }
 
   &-heading {
+    height: 40px;
     margin: 0 auto;
+    
     &__about {
-      @include size (330px, 40px);
+      width: 330px;
     }
     &__intro {
-      @include size (491px, 40px);
+      width: 490px;
     }
     &__free {
       @include size (445px, 50px);
@@ -283,19 +319,19 @@
     &__pro {
       @include size (347px, 46px);
     }
-    &__daren {
-      @include size (331px, 38px);
-    }
     &__more {
       @include size (317px, 48px);
     }
-    &__apply {
-      @include size (246px, 40px);
+    &__daren {
+      width: 330px;
+      position: relative;
+      z-index: 4;
     }
-
-
+    &__apply {
+      width: 246px;
+    }
     &__text {
-      padding: 30px 0;
+      padding: 24px 0;
       font-size: 20px;
     }
   }
@@ -311,6 +347,7 @@
   &-intro {
     background: #dafffa;
     position: relative;
+    padding-bottom: 0;;
     z-index: 3;
 
     &__inner {
@@ -324,8 +361,6 @@
     position: relative;
     width: 100%;
     background: $secondary-100;
-
-
 
     &__content {
       @include flex-center;
@@ -343,6 +378,7 @@
 
     &__imgbox {
       margin-left: 16px;
+
       .inner {
         @include flex-center;
 
@@ -350,7 +386,7 @@
           @include flex-column;
           margin: 0 24px;
           &-img {
-            @include size ( 103px, 103px)
+            @include size ( 103px, 103px);
           }
           &-name {
             font-size: 20px;
@@ -384,11 +420,15 @@
   }
 
   &-daren {
-    background: #dafffa; 
+    position: relative;
+    padding-top: 90px;
+    background: #dafffa;
 
     &__title {
+      @include flex-start;
       position: relative;
-      margin-left: 46px;
+      margin-top: 40px;
+      padding-left: 46px;
       font-size: 32px;
       font-weight: $bold;
       color: $primary-900;
@@ -398,61 +438,73 @@
           @include size(46px, 38px);
           content: "";
           position: absolute;
-          background: url(../images/icon-forum.svg)no-repeat;
-          background-position: center top;
           top: 5px;
-          left: -56px;
+          left: 0;
+          background: url(../images/icon-forum.svg)no-repeat;
+          background-position: left top;
         }
 
         &.home {
           &::before {
-            @include size(46px, 38px);
             background: url(../images/icon-home.svg)no-repeat;
           }
         }
       }
     }
 
-    &__content {
+    &__row {
       @include flex-center;
-      margin-top: 24px;
+      position: relative;
+      margin-top: 40px;
+      z-index: 5;
+    }
+
+    &__left {
+      padding-right: 24px;
     }
 
     &__item {
-      display: inline-block;
       margin-bottom: 16px;
     }
 
-    &__infobox {
+    &__card {
+      display: inline-block;
       @include size(575px, 378px);
       position: relative;
-      background: $primary-900;
+      background: url(../images/bh_no_image.svg) $gray-700;
+      background-size: auto 100%;
+      background-position: center;
+      background-repeat: no-repeat;
       border-radius: 16px;
       overflow: hidden;
-
       &::before {
         content: "";
+        position: absolute;
+        bottom: 0;
         background: linear-gradient(180deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
         width: 100%;
         height: 100%;
-        position: absolute;
-        bottom: 0;
         z-index: 3;
       }
-
-      &.box-sm {
+      &-sm {
         height: 246px;
       }
 
-      &.box-xl {
-        @include size(451px, 684px);
+      &-md {
+        @include size(450px, 270px);
+      }
+
+      &-lg {
+        @include size(450px, 362px);
       }
 
       &-img {
-        @include flex-center;
-        @include center;
         width: 100%;
         height: 100%;
+        .cover {
+          height: 100%;
+          object-fit: cover;
+        }
       }
 
       &-tag {
@@ -468,48 +520,57 @@
       }
 
       &-heading {
+        display: -webkit-box;
         position: absolute;
-        bottom: 0;
-        padding: 16px;
+        bottom: 16px;
+        width: 100%;
+        max-height: 82px;
+        padding: 16px 16px 0;
         font-size: 20px;
         font-weight: $bold;
         color: $white;
         z-index: 5;
-        line-height: 1.5;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
 
       }
     }
 
-    &__authorbox {
+    &__author {
       display: flex;
       align-items: center;
-      margin-top: 8px;
+
       .profile {
-        @include size (36px);
+        @include size (24px);
         @include flex-center;
         background: $primary-900;
         border-radius: 100%;
-
+        object-fit: cover;
       }
+
       .name {
         padding:0 8px;
-        font-size: 15px;
         font-weight: $medium;
       }
+
       .count {
+        padding-right: 4px;
         color: #7e7e7e;
       }
+
       .medal {
-        @include size(22px);
+        @include size(24px);
       }
     }
 
-    
   }
 
   &-step {
     position: relative;
     padding-bottom: 90px;
+    z-index: 4;
     &__rule {
       padding: 24px 0;
       font-size: 20px;
@@ -578,7 +639,7 @@
     text-align: center;
     box-shadow: (0 -5px 20px) rgba(0, 0, 0, .3);
     position: fixed;
-    bottom: 0;
+    bottom: -1px;
     z-index: 99999;
     transition: .4s ease;
 

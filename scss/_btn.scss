@@ -2,7 +2,7 @@
   @include flex-center;
   justify-content: space-between;
   position: relative;
-  margin: 0 px-em(8);
+  margin: px-em(28) px-em(8) 0;
   padding: px-em(8) px-em(24);
   border-radius: 4rem;
   font-size: 20px;
@@ -32,7 +32,7 @@
 
   }
 
-  &--l {
+  &--lg {
     min-width: 200px;
     &::after {
       right: px-em(24);
@@ -46,6 +46,7 @@
 
   &-apply {
     display: inline-block;
+    margin: auto 0.5em;
     font-size: 28px;
     font-weight: $bold;
 
@@ -61,7 +62,7 @@
     justify-content: center;
     margin: vwm(16px) auto;
     font-size: vwm(36px);
-    &--md,&--l {
+    &--md,&--lg {
       width: 50%;
       min-width: auto;
 
@@ -76,7 +77,7 @@
       }
     }
   
-    &--l {
+    &--lg {
       &::after {
         right: vwm(36px);
       }
