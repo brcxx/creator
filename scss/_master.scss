@@ -94,6 +94,7 @@
     position: relative;
     z-index: 6;
     margin: px-em(-381) auto;
+    animation: bounce 5s infinite alternate-reverse;
   }
 
   &__main-title {
@@ -133,7 +134,7 @@
   .decobox {
     * {
       position: absolute;
-      z-index: 5;
+      z-index: 3;
     }
 
     &__circle {
@@ -154,7 +155,7 @@
         left: calc(50% + px-em(-689));
 
         &.left {
-          top: 1140px;
+          top: 1188px;
           left: calc(50% + px-em(-650));
         }
       }
@@ -201,7 +202,7 @@
         }
 
         &.left {
-          top: px-em(1172);
+          top: px-em(1188);
           left: calc(50% + px-em(-885));
         }
       }
@@ -252,7 +253,7 @@
     left: 50%;
     display: block;
     width: 100%;
-    padding-bottom: 160px;
+    padding-bottom: 200px;
     transform: translate(-50%);
     z-index: 1;
   }
@@ -278,7 +279,7 @@
 
   &:nth-child(3) {
     &::after {
-      bottom: -150px;
+      bottom: -200px;
       background: url(../images/bg-gray--wave.svg);
       background-size: auto 100%;
       background-position: right bottom;
@@ -324,8 +325,6 @@
     }
     &__daren {
       width: 330px;
-      position: relative;
-      z-index: 4;
     }
     &__apply {
       width: 246px;
@@ -423,6 +422,7 @@
     position: relative;
     padding-top: 90px;
     background: #dafffa;
+    
 
     &__title {
       @include flex-start;
@@ -455,7 +455,7 @@
     &__row {
       @include flex-center;
       position: relative;
-      margin-top: 40px;
+      margin-top: 24px;
       z-index: 5;
     }
 
@@ -465,6 +465,8 @@
 
     &__item {
       margin-bottom: 16px;
+      overflow: hidden;
+      
     }
 
     &__card {
@@ -477,15 +479,22 @@
       background-repeat: no-repeat;
       border-radius: 16px;
       overflow: hidden;
-      &::before {
+      &:hover {
+        img {
+          transition: .4s ease;
+          transform: scale(1.1);
+        }
+      }
+      &::after {
         content: "";
         position: absolute;
         bottom: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%, rgba(0,0,0, .9) 100%);
         width: 100%;
         height: 100%;
-        z-index: 3;
+        z-index: 4;
       }
+
       &-sm {
         height: 246px;
       }
@@ -501,9 +510,11 @@
       &-img {
         width: 100%;
         height: 100%;
+
         .cover {
           height: 100%;
           object-fit: cover;
+
         }
       }
 
@@ -541,6 +552,9 @@
     &__author {
       display: flex;
       align-items: center;
+      &:hover {
+        color: $gray-700;
+      }
 
       .profile {
         @include size (24px);
@@ -553,6 +567,7 @@
       .name {
         padding:0 8px;
         font-weight: $medium;
+
       }
 
       .count {

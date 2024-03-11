@@ -83,32 +83,31 @@
     padding: vwm(150px) 0;
 
     &::before,&::after {
-      padding-bottom: vwm(232px);
+      padding-bottom: vwm(250px);
     }
 
     &:nth-child(2) {
 
       &::before {
-        top: vwm(-100px);
-        background-position: left 16% bottom;
+        background-position: right 16% bottom;;
       }
 
       &::after {
         bottom: vwm(-230px);
-        background-position: right 15% center;
+        background-position: left 10% bottom;
       }
     }
 
     &:nth-child(3) {
       &::after {
         bottom: vwm(-230px);
-        background-position: left 16% bottom;
+        background-position: right 10% bottom;
       }
     }
 
     &:nth-child(4) {
       &::after {
-        background-position: left 56% bottom;
+        background-position: right 40% bottom;
       }
     }
 
@@ -218,10 +217,10 @@
         @include size (vwm(600px), vwm(70px));
       }
       &__daren {
-        @include size (vwm(331px), vwm(38px));
+        @include size (vwm(550px), vwm(48px));
       }
       &__apply {
-        @include size (vwm(304px), vwm(60px));
+        @include size (vwm(450px), vwm(72px));
       }
   
       &__text {
@@ -358,7 +357,7 @@
       padding-bottom: vwm(90px);
 
       &__rule {
-        padding: vwm(24px) 0;
+        padding: vwm(40px) 0 vwm(24px);
         font-size: vwm(33px);
       }
 
