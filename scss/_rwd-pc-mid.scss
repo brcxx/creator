@@ -1,3 +1,45 @@
+@media screen and (max-width:1440px) and (min-width: 1080px) {
+  .section-kv {
+    min-height: 880px;
+
+    &__d-girl {
+      @include size(1800px, 900px);
+      top: px-em(-50);
+      left: calc(50% + px-em(-900));
+    }
+  
+    &__textbox {
+      margin: px-em(-560) auto;
+    }
+
+    &__main-title {
+      max-width: 1000px; 
+    }
+  
+    &__sec-title {
+      max-width: 588px;
+    }
+
+    &__shine01 {
+      top: px-em(350);
+    }
+
+    &__shine02 {
+      top: px-em(120);
+    }
+  
+    &__shine03 {
+      top: px-em(150);
+    }
+
+    &__marquee {
+      top: px-em(-130);
+      left: calc(50% + px-em(-1200));
+    }
+  
+  }
+}
+
 @media screen and (max-width:($pcrwd-breakpoint * 1px)) {
 
   .container {
@@ -54,6 +96,11 @@
       max-width: vw(688px);
       margin: 0 auto;
       padding-top: px-em(14);
+    }
+
+    &__marquee {
+      top: vw(-130px);
+      left: calc(50% + vw(-1200px));
     }
   }
 

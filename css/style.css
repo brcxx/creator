@@ -192,7 +192,6 @@ button {
   height: 100%;
   background: url(../images/kv-bg-marquee.svg) no-repeat;
   background-size: auto 100%;
-  overflow: hidden;
 }
 .section-kv__cat01 {
   width: 100px;
@@ -604,6 +603,9 @@ button {
   border-radius: 16px;
   overflow: hidden;
 }
+.section-daren .daren-card * {
+  pointer-events: none;
+}
 .section-daren .daren-card:hover img {
   transition: 0.4s ease;
   transform: scale(1.1);
@@ -763,6 +765,39 @@ button {
   right: 0;
 }
 
+@media screen and (max-width: 1440px) and (min-width: 1080px) {
+  .section-kv {
+    min-height: 880px;
+  }
+  .section-kv__d-girl {
+    width: 1800px;
+    height: 900px;
+    top: -3.125em;
+    left: calc(50% - 56.25em);
+  }
+  .section-kv__textbox {
+    margin: -35em auto;
+  }
+  .section-kv__main-title {
+    max-width: 1000px;
+  }
+  .section-kv__sec-title {
+    max-width: 588px;
+  }
+  .section-kv__shine01 {
+    top: 21.875em;
+  }
+  .section-kv__shine02 {
+    top: 7.5em;
+  }
+  .section-kv__shine03 {
+    top: 9.375em;
+  }
+  .section-kv__marquee {
+    top: -8.125em;
+    left: calc(50% - 75em);
+  }
+}
 @media screen and (max-width: 1080px) {
   .container {
     padding: 0 1.4814814815vw;
@@ -813,6 +848,10 @@ button {
     max-width: 63.7037037037vw;
     margin: 0 auto;
     padding-top: 0.875em;
+  }
+  .section-kv__marquee {
+    top: -12.037037037vw;
+    left: calc(50% - 111.1111111111vw);
   }
   .section {
     padding-top: 9.2592592593vw;

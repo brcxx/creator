@@ -40,7 +40,6 @@
     height: 100%;
     background: url(../images/kv-bg-marquee.svg)no-repeat;
     background-size: auto 100%;
-    overflow: hidden;
   }
 
 
@@ -434,7 +433,6 @@
     padding-top: 90px;
     background: #dafffa;
     
-
     &__title {
       @include flex-start;
       position: relative;
@@ -512,6 +510,11 @@
       background-repeat: no-repeat;
       border-radius: 16px;
       overflow: hidden;
+
+      *{
+        pointer-events: none;
+      }
+      
       &:hover {
         img {
           transition: .4s ease;
