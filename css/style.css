@@ -237,7 +237,7 @@ button {
   width: 48px;
   height: 65px;
   top: 20.625em;
-  left: calc(50% + 21.5em);
+  left: calc(50% + 15.25em);
   z-index: 4;
   animation: shine 1s infinite alternate-reverse;
 }

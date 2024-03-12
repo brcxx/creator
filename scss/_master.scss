@@ -67,7 +67,7 @@
   &__shine01 {
     @include size(48px, 65px);
     top: px-em(330);
-    left: calc(50% + px-em(344));
+    left: calc(50% + px-em(244));
     z-index: 4;
     animation: shine 1s infinite alternate-reverse;
   }
