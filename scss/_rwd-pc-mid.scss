@@ -5,45 +5,45 @@
   }
 
   .section-kv {
-    min-height: vw(990px);
+    min-height: vw($h);
 
     &__bg {
       min-height: vw(990px);
     }
 
     &__circle {
-      height: vw(990px);
-      background: url(../images/kv-background-circle.svg)no-repeat;
+      height: vw(920px);
+      background: url(../images/kv-background-circle.svg) no-repeat;
       background-position: center top;
       background-size: auto 100%;
       z-index: 2;
     }
 
     &__textbox {
-      margin: vw(-300px) auto;
+      margin: vw(-500px) auto;
     }
 
     &__d-girl {
-      @include size(vw(1920px), vw(900px));
+      @include size(vw(900px), vw(1920px));
       top: 0;
-      left: calc(50% + vw(-960px));
+      left: calc(50% + vw(-450px));
     }
 
     &__shine01 {
       @include size(vw(48px), vw(65px));
-      top: vw(492px);
-      left: calc(50% + vw(344px));
+      top: vw(300px);
+      left: calc(50% + vw(230px));
     }
   
     &__shine02 {
       @include size(vw(109px), vw(159px));
-      top: vw(104px);
-      left: calc(50% + vw(-316px));
+      top: vw(50px);
+      left: calc(50% + vw(-330px));
     }
 
     &__shine03 {
       @include size(vw(50px), vw(67px));
-      top: vw(190px);
+      top: vw(110px);
       left: calc(50% + vw(-316px));
     }
   

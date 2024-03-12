@@ -13,7 +13,7 @@
 
     &__circle {
       height: vwm(990px);
-      background-position: right 45% center ;
+      background-position: right 45% center;
     }
 
     &__marquee {
@@ -23,14 +23,14 @@
 
     &__cat01 {
       @include size(vwm(100px));
-      left: calc(50% + vwm(-300px));
-      bottom: vwm(280px);
+      left: calc(50% + vwm(-350px));
+      bottom: vwm(320px);
     }
 
     &__d-girl {
-      @include size(vwm(1700px), vwm(750px));
-      top: vwm(112px);
-      left: calc(50% + vwm(-880px));
+      @include size(vwm(900px), vwm(1920px));
+      top: vwm(150px);
+      left: calc(50% + vwm(-450px));
     }
 
     &__shine01 {
@@ -41,23 +41,23 @@
 
     &__shine02 {
       @include size(vwm(109px), vwm(160px));
-      top: vwm(180px);
+      top: vwm(150px);
       left: calc(50% + vwm(-270px));
     }
 
     &__shine03 {
       @include size(vwm(100px), vwm(134px));
-      top: vwm(190px);
-      left: calc(50% + vwm(-280px));
+      top: vwm(170px);
+      left: calc(50% + vwm(-300px));
     }
 
     &__textbox {
       width: 95%;
-      margin: vwm(-250px) auto;
+      margin: vwm(-300px) auto;
     }
 
     &__sec-title {
-      max-width: vwm(688px);
+      max-width: vwm(588px);
       padding-top: vwm(14px);
     }
 
