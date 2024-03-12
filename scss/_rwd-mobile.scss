@@ -5,14 +5,14 @@
   }
 
   .section-kv {
-    min-height: vwm($h);
+    min-height: vwm(990px);
 
     &__bg {
-      min-height: vwm($h);
+      min-height: vwm(990px);
     }
 
     &__circle {
-      height: vwm($h);
+      height: vwm(990px);
       background-position: right 45% center ;
     }
 

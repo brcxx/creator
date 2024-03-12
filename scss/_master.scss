@@ -34,8 +34,8 @@
   }
 
   &__marquee {
-    top: px-em(-130);
-    left: calc(50% + px-em(-1400));
+    top: px-em(-120);
+    left: calc(50% + px-em(-1250));
     width: 100%;
     height: 100%;
     background: url(../images/kv-bg-marquee.svg)no-repeat;
@@ -59,15 +59,15 @@
   }
 
   &__d-girl {
-    @include size(1920px, 900px);
+    @include size(1600px, 900px);
     z-index: 5;
-    top:0;
-    left: calc(50% + px-em(-960));
+    top: px-em(75);
+    left: calc(50% + px-em(-800));
   }
 
   &__shine01 {
     @include size(48px, 65px);
-    top: px-em(492);
+    top: px-em(400);
     left: calc(50% + px-em(344));
     z-index: 4;
     animation: shine 1s infinite alternate-reverse;
@@ -92,17 +92,17 @@
   &__textbox {
     position: relative;
     z-index: 6;
-    margin: px-em(-381) auto;
+    margin: px-em(-400) auto;
     animation: bounce 5s infinite alternate-reverse;
   }
 
   &__main-title {
-    max-width: 1427px; 
+    max-width: 1000px; 
     margin: 0 auto;
   }
 
   &__sec-title {
-    max-width: 688px;
+    max-width: 488px;
     margin: 0 auto;
     padding-top: px-em(14);
   }
@@ -117,12 +117,12 @@
   }
 
   &__line02 {
-    top: px-em(-104);
+    top: px-em(-130);
     left: calc(50% + px-em(587));
   }
 
   &__line03 {
-    bottom: px-em(-430);
+    bottom: px-em(-400);
     left: calc(50% + px-em(-94));
   }
 }
@@ -576,6 +576,11 @@
     &__author {
       display: flex;
       align-items: center;
+      
+      *{
+        pointer-events: none;
+      }
+
       &:hover {
         color: $gray-700;
       }
