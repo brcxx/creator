@@ -208,16 +208,16 @@ button {
   animation: swing 2s ease infinite;
 }
 .section-kv__d-girl {
-  width: 1600px;
-  height: 900px;
+  width: 960px;
+  height: 1920px;
   z-index: 5;
-  top: 4.6875em;
-  left: calc(50% - 50em);
+  top: 0em;
+  left: calc(50% - 28.125em);
 }
 .section-kv__shine01 {
   width: 48px;
   height: 65px;
-  top: 25em;
+  top: 22.5em;
   left: calc(50% + 21.5em);
   z-index: 4;
   animation: shine 1s infinite alternate-reverse;
@@ -241,7 +241,7 @@ button {
 .section-kv__textbox {
   position: relative;
   z-index: 6;
-  margin: -25em auto;
+  margin: -28.125em auto;
   animation: bounce 5s infinite alternate-reverse;
 }
 .section-kv__main-title {

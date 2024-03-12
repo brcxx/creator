@@ -59,15 +59,15 @@
   }
 
   &__d-girl {
-    @include size(1600px, 900px);
+    @include size(960px, 1920px);
     z-index: 5;
-    top: px-em(75);
-    left: calc(50% + px-em(-800));
+    top: px-em(0);
+    left: calc(50% + px-em(-450));
   }
 
   &__shine01 {
     @include size(48px, 65px);
-    top: px-em(400);
+    top: px-em(360);
     left: calc(50% + px-em(344));
     z-index: 4;
     animation: shine 1s infinite alternate-reverse;
@@ -92,7 +92,7 @@
   &__textbox {
     position: relative;
     z-index: 6;
-    margin: px-em(-400) auto;
+    margin: px-em(-450) auto;
     animation: bounce 5s infinite alternate-reverse;
   }
 
