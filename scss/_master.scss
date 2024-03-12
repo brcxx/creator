@@ -34,7 +34,7 @@
   }
 
   &__marquee {
-    top: px-em(-70);
+    top: px-em(-130);
     left: calc(50% + px-em(-1400));
     width: 100%;
     height: 100%;
@@ -386,6 +386,17 @@
           margin: 0 24px;
           &-img {
             @include size ( 103px, 103px);
+            &.creator {
+              filter: drop-shadow(0 10px 8px rgba(47, 137, 70, .5));
+            }
+
+            &.pro {
+              filter: drop-shadow(0 10px 8px rgba(48, 153, 240, .5));
+            }
+
+            &.chief {
+              filter: drop-shadow(0 10px 8px rgba(250, 101, 160, .5));
+            }
           }
           &-name {
             font-size: 20px;
@@ -461,19 +472,41 @@
 
     &__left {
       padding-right: 24px;
+
+      .daren-item {
+        &:nth-child(2) {
+          .daren-card {
+            height: 246px;
+          }
+        }
+      }
     }
 
-    &__item {
+    &__right {
+      .daren-item {
+        &:nth-child(1) {
+          .daren-card {
+            @include size(450px, 270px);
+          }
+        }
+        &:nth-child(2) {
+          .daren-card {
+            @include size(450px, 362px);
+          }
+        }
+      }
+    }
+
+    .daren-item {
       margin-bottom: 16px;
       overflow: hidden;
-      
     }
 
-    &__card {
+    .daren-card {
       display: inline-block;
       @include size(575px, 378px);
       position: relative;
-      background: url(../images/bh_no_image.svg) $gray-700;
+      background: url(https://i2.bahamut.com.tw/image/bh_no_image.svg) $gray-700;
       background-size: auto 100%;
       background-position: center;
       background-repeat: no-repeat;
@@ -495,19 +528,7 @@
         z-index: 4;
       }
 
-      &-sm {
-        height: 246px;
-      }
-
-      &-md {
-        @include size(450px, 270px);
-      }
-
-      &-lg {
-        @include size(450px, 362px);
-      }
-
-      &-img {
+      &__img {
         width: 100%;
         height: 100%;
 
@@ -518,7 +539,7 @@
         }
       }
 
-      &-tag {
+      &__tag {
         position: absolute;
         top: 0;
         left: 0;
@@ -530,7 +551,7 @@
         z-index: 6;
       }
 
-      &-heading {
+      &__heading {
         display: -webkit-box;
         position: absolute;
         bottom: 16px;
@@ -653,9 +674,9 @@
     background: rgba(1, 90, 72, 1);
     text-align: center;
     box-shadow: (0 -5px 20px) rgba(0, 0, 0, .3);
-    position: fixed;
-    bottom: -1px;
-    z-index: 99999;
+    position: sticky;
+    bottom: 0px;
+    z-index: 9;
     transition: .4s ease;
 
     &--fixed {

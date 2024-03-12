@@ -106,12 +106,12 @@ button {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   padding: 16px 0;
   width: 100%;
   background: #fa65a1;
-  z-index: 999;
+  z-index: 9;
 }
 
 .footer {
@@ -186,7 +186,7 @@ button {
   bottom: 0;
 }
 .section-kv__marquee {
-  top: -4.375em;
+  top: -8.125em;
   left: calc(50% - 87.5em);
   width: 100%;
   height: 100%;
@@ -508,6 +508,15 @@ button {
   width: 103px;
   height: 103px;
 }
+.section-chapter__imgbox .inner__item-img.creator {
+  filter: drop-shadow(0 10px 8px rgba(47, 137, 70, 0.5));
+}
+.section-chapter__imgbox .inner__item-img.pro {
+  filter: drop-shadow(0 10px 8px rgba(48, 153, 240, 0.5));
+}
+.section-chapter__imgbox .inner__item-img.chief {
+  filter: drop-shadow(0 10px 8px rgba(250, 101, 160, 0.5));
+}
 .section-chapter__imgbox .inner__item-name {
   font-size: 20px;
   font-weight: 500;
@@ -568,27 +577,38 @@ button {
 .section-daren__left {
   padding-right: 24px;
 }
-.section-daren__item {
+.section-daren__left .daren-item:nth-child(2) .daren-card {
+  height: 246px;
+}
+.section-daren__right .daren-item:nth-child(1) .daren-card {
+  width: 450px;
+  height: 270px;
+}
+.section-daren__right .daren-item:nth-child(2) .daren-card {
+  width: 450px;
+  height: 362px;
+}
+.section-daren .daren-item {
   margin-bottom: 16px;
   overflow: hidden;
 }
-.section-daren__card {
+.section-daren .daren-card {
   display: inline-block;
   width: 575px;
   height: 378px;
   position: relative;
-  background: url(../images/bh_no_image.svg) #696969;
+  background: url(https://i2.bahamut.com.tw/image/bh_no_image.svg) #696969;
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 16px;
   overflow: hidden;
 }
-.section-daren__card:hover img {
+.section-daren .daren-card:hover img {
   transition: 0.4s ease;
   transform: scale(1.1);
 }
-.section-daren__card::after {
+.section-daren .daren-card::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -597,26 +617,15 @@ button {
   height: 100%;
   z-index: 4;
 }
-.section-daren__card-sm {
-  height: 246px;
-}
-.section-daren__card-md {
-  width: 450px;
-  height: 270px;
-}
-.section-daren__card-lg {
-  width: 450px;
-  height: 362px;
-}
-.section-daren__card-img {
+.section-daren .daren-card__img {
   width: 100%;
   height: 100%;
 }
-.section-daren__card-img .cover {
+.section-daren .daren-card__img .cover {
   height: 100%;
   object-fit: cover;
 }
-.section-daren__card-tag {
+.section-daren .daren-card__tag {
   position: absolute;
   top: 0;
   left: 0;
@@ -627,7 +636,7 @@ button {
   border-radius: 0 0 16px 0;
   z-index: 6;
 }
-.section-daren__card-heading {
+.section-daren .daren-card__heading {
   display: -webkit-box;
   position: absolute;
   bottom: 16px;
@@ -741,9 +750,9 @@ button {
   background: rgb(1, 90, 72);
   text-align: center;
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
-  position: fixed;
-  bottom: -1px;
-  z-index: 99999;
+  position: sticky;
+  bottom: 0px;
+  z-index: 9;
   transition: 0.4s ease;
 }
 .section-apply--fixed {
@@ -777,10 +786,7 @@ button {
   .section-kv__d-girl {
     width: 177.7777777778vw;
     height: 83.3333333333vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: calc(50% - 88.8888888889vw);
   }
   .section-kv__shine01 {
     width: 4.4444444444vw;
@@ -849,31 +855,31 @@ button {
   .section-daren__left {
     padding-right: 2.2222222222vw;
   }
-  .section-daren__item {
+  .section-daren__left .daren-item:nth-child(2) .daren-card {
+    height: 22.7777777778vw;
+  }
+  .section-daren__right .daren-item:nth-child(1) .daren-card {
+    width: 41.6666666667vw;
+    height: 25vw;
+  }
+  .section-daren__right .daren-item:nth-child(2) .daren-card {
+    width: 41.6666666667vw;
+    height: 33.5185185185vw;
+  }
+  .section-daren .daren-item {
     margin-bottom: 1.4814814815vw;
   }
-  .section-daren__card {
+  .section-daren .daren-card {
     width: 53.2407407407vw;
     height: 35vw;
     border-radius: 1.4814814815vw;
   }
-  .section-daren__card-sm {
-    height: 22.7777777778vw;
-  }
-  .section-daren__card-md {
-    width: 41.6666666667vw;
-    height: 25vw;
-  }
-  .section-daren__card-lg {
-    width: 41.6666666667vw;
-    height: 33.5185185185vw;
-  }
-  .section-daren__card-tag {
+  .section-daren .daren-card__tag {
     padding: 0.7407407407vw 1.1111111111vw;
     font-size: 1.4814814815vw;
     border-radius: 0 0 1.4814814815vw 0;
   }
-  .section-daren__card-heading {
+  .section-daren .daren-card__heading {
     bottom: 1.4814814815vw;
     max-height: 7.5925925926vw;
     padding: 1.4814814815vw 1.4814814815vw 0;
@@ -913,8 +919,8 @@ button {
     background-position: right 45% center;
   }
   .section-kv__marquee {
-    top: -36.4583333333vw;
-    left: calc(50% - 114.5833333333vw);
+    top: -45.5729166667vw;
+    left: calc(50% - 108.0729166667vw);
   }
   .section-kv__cat01 {
     width: 13.0208333333vw;
@@ -925,6 +931,8 @@ button {
   .section-kv__d-girl {
     width: 221.3541666667vw;
     height: 97.65625vw;
+    top: 14.5833333333vw;
+    left: calc(50% - 114.5833333333vw);
   }
   .section-kv__shine01 {
     width: 6.25vw;
@@ -1135,10 +1143,20 @@ button {
   }
   .section-chapter__imgbox .inner__item {
     flex-direction: row;
+    margin-top: 5.2083333333vw;
   }
   .section-chapter__imgbox .inner__item-img {
     width: 20.1822916667vw;
     height: 20.1822916667vw;
+  }
+  .section-chapter__imgbox .inner__item-img.creator {
+    filter: drop-shadow(0 1.3020833333vw 1.0416666667vw rgba(47, 137, 70, 0.5));
+  }
+  .section-chapter__imgbox .inner__item-img.pro {
+    filter: drop-shadow(0 1.3020833333vw 1.0416666667vw rgba(48, 153, 240, 0.5));
+  }
+  .section-chapter__imgbox .inner__item-img.chief {
+    filter: drop-shadow(0 1.3020833333vw 1.0416666667vw rgba(250, 101, 160, 0.5));
   }
   .section-chapter__imgbox .inner__item-name {
     font-size: 4.6875vw;
@@ -1164,23 +1182,33 @@ button {
     margin: 6.25vw auto;
   }
   .section-daren__left {
+    width: 100%;
     padding-right: 0;
   }
-  .section-daren__item {
+  .section-daren__left .daren-item:nth-child(2) .daren-card {
+    height: 49.21875vw;
+  }
+  .section-daren__right {
     width: 100%;
+  }
+  .section-daren__right .daren-item:nth-child(1) .daren-card, .section-daren__right .daren-item:nth-child(2) .daren-card {
+    width: 100%;
+    height: 49.21875vw;
+  }
+  .section-daren .daren-item {
     margin-bottom: 4.4444444444vw;
   }
-  .section-daren__card, .section-daren-sm, .section-daren-md, .section-daren-xl {
+  .section-daren .daren-card {
     width: 100%;
     height: 49.21875vw;
     border-radius: 4.1666666667vw;
   }
-  .section-daren__card-tag, .section-daren-sm-tag, .section-daren-md-tag, .section-daren-xl-tag {
+  .section-daren .daren-card__tag {
     padding: 1.0416666667vw 2.0833333333vw;
     font-size: 3.90625vw;
     border-radius: 0 0 4.1666666667vw 0;
   }
-  .section-daren__card-heading, .section-daren-sm-heading, .section-daren-md-heading, .section-daren-xl-heading {
+  .section-daren .daren-card__heading {
     bottom: 4.1666666667vw;
     max-height: 21.3541666667vw;
     padding: 4.1666666667vw 4.1666666667vw 0;

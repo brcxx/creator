@@ -13,12 +13,12 @@
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   padding: 16px 0;
   width: 100%;
   background: $complementary;
-  z-index: 999;
+  z-index: 9;
 }
 
 .footer {

@@ -25,7 +25,7 @@
 
     &__d-girl {
       @include size(vw(1920px), vw(900px));
-      @include center;
+      left: calc(50% + vw(-960px));
     }
 
     &__shine01 {
@@ -101,35 +101,46 @@
   
       &__left {
         padding-right: vw(24px);
+
+        .daren-item {
+          &:nth-child(2) {
+            .daren-card {
+              height: vw(246px);
+            }
+          }
+        }
+      }
+
+      &__right {
+        .daren-item {
+          &:nth-child(1) {
+            .daren-card {
+              @include size(vw(450px), vw(270px));
+            }
+          }
+          &:nth-child(2) {
+            .daren-card {
+              @include size(vw(450px), vw(362px));
+            }
+          }
+        }
       }
   
-      &__item {
+      .daren-item {
         margin-bottom: vw(16px);
       }
   
-      &__card {
+      .daren-card {
         @include size(vw(575px), vw(378px));
         border-radius: vw(16px);
-
-        &-sm {
-          height: vw(246px);
-        }
   
-        &-md {
-          @include size(vw(450px), vw(270px));
-        }
-  
-        &-lg {
-          @include size(vw(450px), vw(362px));
-        }
-  
-        &-tag {
+        &__tag {
           padding: vw(8px) vw(12px);
           font-size: vw(16px);
           border-radius: 0 0 vw(16px) 0;
         }
   
-        &-heading {
+        &__heading {
           bottom: vw(16px);
           max-height: vw(82px);
           padding: vw(16px) vw(16px) 0;
