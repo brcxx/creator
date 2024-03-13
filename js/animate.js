@@ -55,8 +55,9 @@ anime({
     scale: [0, 1],
     opacity: [0, 1],
     easing: 'easeOutElastic(2.5, 1)',
-    duration: 1500,
+    duration: 2000,
     delay: anime.stagger(500),
+    loop: true
 })
 
 
