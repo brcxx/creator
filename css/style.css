@@ -101,14 +101,14 @@ button {
 }
 
 .logo {
-  width: 198px;
-  height: 33px;
+  width: 125px;
+  height: 25px;
 }
 
 .header {
   position: sticky;
   top: 0;
-  padding: 16px 0;
+  padding: 8px 0;
   width: 100%;
   background: #fa65a1;
   z-index: 9;
@@ -128,26 +128,32 @@ button {
   text-align: center;
 }
 .footer-info .logo {
+  width: 200px;
+  height: 25px;
   margin: 0 auto;
 }
 .footer .copy-right {
-  padding-top: 16px;
+  padding: 16px 0;
 }
 
 @media screen and (max-width: 768px) {
   .logo {
-    width: 35.6770833333vw;
-    height: 6.25vw;
+    width: 32.5520833333vw;
+    height: 6.5104166667vw;
     margin: auto;
   }
   .header {
-    padding: 3.125vw 0;
+    padding: 1.5625vw 0;
   }
   .footer {
     max-height: 26.0416666667vw;
   }
   .footer-info {
     padding: 2.0833333333vw 0 3.125vw;
+  }
+  .footer-info .logo {
+    width: 52.0833333333vw;
+    height: 6.5104166667vw;
   }
   .footer .copy-right {
     padding: 4.1666666667vw 0;
@@ -751,7 +757,6 @@ button {
 }
 .section-apply {
   width: 100%;
-  padding: 16px 0;
   background: rgb(1, 90, 72);
   text-align: center;
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
@@ -759,6 +764,7 @@ button {
   bottom: 0px;
   z-index: 9;
   transition: 0.4s ease;
+  line-height: 1.5;
 }
 .section-apply--fixed {
   position: relative;
@@ -910,8 +916,8 @@ button {
     height: 2.2222222222vw;
   }
   .section-apply {
-    padding: 5.2083333333vw 0;
-    box-shadow: 0 -1.3020833333vw 5.2083333333vw rgba(0, 0, 0, 0.3);
+    padding: 0.7407407407vw 0;
+    box-shadow: 0 -0.9259259259vw 3.7037037037vw rgba(0, 0, 0, 0.3);
   }
 }
 @media screen and (max-width: 768px) {
@@ -1008,7 +1014,6 @@ button {
     height: 30.5989583333vw;
     left: calc(50% + 29.9479166667vw);
     top: 104.1666666667vw;
-    z-index: 2;
   }
   .section .decobox__circle-blue02 {
     width: 13.8020833333vw;
@@ -1027,12 +1032,6 @@ button {
     height: 24.4791666667vw;
     top: 140.625vw;
     left: calc(50% - 58.59375vw);
-  }
-  .section .decobox__circle-blue-xs {
-    width: 82px;
-    height: 82px;
-    left: calc(50% - 40.6875em);
-    top: 56.25em;
   }
   .section .decobox__circle-yellow01 {
     width: 33.8541666667vw;
@@ -1206,7 +1205,7 @@ button {
     height: 49.21875vw;
   }
   .section-daren .daren-item {
-    margin-bottom: 4.4444444444vw;
+    margin-bottom: 6.25vw;
   }
   .section-daren .daren-card {
     width: 100%;
@@ -1281,7 +1280,7 @@ button {
     transform: rotate(90deg);
   }
   .section-apply {
-    padding: 2.0833333333vw 0;
+    padding: 3.6458333333vw 0;
     box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
   }
 }
@@ -1324,12 +1323,14 @@ button {
   right: 1.5em;
 }
 .btn--xl {
-  min-width: 280px;
+  min-width: 200px;
+  max-height: 65px;
+  padding: 0.25em 1.5em;
 }
 .btn-apply {
   display: inline-block;
-  margin: auto 0.5em;
-  font-size: 28px;
+  margin: 0.5em 1em;
+  font-size: 24px;
   font-weight: 700;
 }
 .btn-apply::after {
@@ -1359,8 +1360,10 @@ button {
   .btn--xl {
     width: 40%;
     min-width: 36.4583333333vw;
+    max-height: initial;
   }
   .btn-apply {
+    margin: 0.5208333333vw 2.0833333333vw;
     padding: 2.0833333333vw 3.125vw;
     font-size: 5.46875vw;
   }

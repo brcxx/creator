@@ -677,7 +677,6 @@
 
   &-apply {
     width: 100%;
-    padding: 16px 0;
     background: rgba(1, 90, 72, 1);
     text-align: center;
     box-shadow: (0 -5px 20px) rgba(0, 0, 0, .3);
@@ -685,6 +684,7 @@
     bottom: 0px;
     z-index: 9;
     transition: .4s ease;
+    line-height: 1.5;
 
     &--fixed {
       position: relative;

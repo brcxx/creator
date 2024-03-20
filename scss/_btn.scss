@@ -40,14 +40,16 @@
   }
 
   &--xl {
-    min-width: 280px;
+    min-width: 200px;
+    max-height: 65px;;
+    padding: px-em(4) px-em(24);
   }
 
 
   &-apply {
     display: inline-block;
-    margin: auto 0.5em;
-    font-size: 28px;
+    margin: px-em(8) px-em(16);
+    font-size: 24px;
     font-weight: $bold;
 
     &::after {
@@ -86,12 +88,13 @@
     &--xl {
       width: 40%;
       min-width: vwm(280px);
+      max-height: initial;
     }
 
     &-apply {
+      margin: vwm(4px) vwm(16px);
       padding: vwm(16px) vwm(24px);
       font-size: vwm(42px);
-  
     }
 
   }

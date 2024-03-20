@@ -9,13 +9,13 @@
 }
 
 .logo {
-  @include size (198px, 33px);
+  @include size (125px, 25px);
 }
 
 .header {
   position: sticky;
   top: 0;
-  padding: 16px 0;
+  padding: 8px 0;
   width: 100%;
   background: $complementary;
   z-index: 9;
@@ -33,31 +33,34 @@
     text-align: center;
 
     .logo {
+      @include size (200px, 25px);
       margin: 0 auto;
     }
   }
 
   .copy-right {
-    padding-top: 16px;
+    padding: 16px 0;
   }
 }
 
 @media screen and (max-width:($mbrwd-breakpoint * 1px)) {
 
   .logo {
-    @include size (vwm(274px), vwm(48px));
+    @include size (vwm(250px), vwm(50px));
     margin: auto;
   }
 
   .header {
-    padding: vwm(24px) 0;
+    padding: vwm(12px) 0;
   }
 
   .footer {
     max-height: vwm(200px);
     &-info {
       padding: vwm(16px) 0 vwm(24px);
-  
+      .logo {
+        @include size (vwm(400px), vwm(50px));
+      }
     }
   
     .copy-right {

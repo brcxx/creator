@@ -122,7 +122,6 @@
           @include size (vwm(235px));
           left: calc(50% + vwm(230px));
           top: vwm(800px);
-          z-index: 2;
         }
 
         &-blue02 {
@@ -141,12 +140,6 @@
           @include size(vwm(188px));
           top: vwm(1080px);
           left: calc(50% + vwm(-450px));
-        }
-
-        &-blue-xs {
-          @include size(82px);
-          left: calc(50% + px-em(-651));
-          top: px-em(900);
         }
 
         &-yellow01 {
@@ -343,7 +336,7 @@
       }
   
       .daren-item {
-        margin-bottom: vw(48px);
+        margin-bottom: vwm(48px);
       }
   
       .daren-card {
@@ -431,7 +424,7 @@
     }
 
     &-apply {
-      padding: vwm(16px) 0;
+      padding: vwm(28px) 0;
       box-shadow: (0 -5px 20px) rgba(0, 0, 0, .3);
     }
   }
